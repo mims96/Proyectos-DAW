@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido</title>
+</head>
+<body style="background-image: url('/money.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <fieldset style="background-color:white; width: 25%; text-align:center; margin: auto; border: 5px solid #93C572; border-radius: 10px;">
+	
+	<h1>¡Bienvenido a su cajero!</h1>
+	<h3>Por favor, identifíquese</h3>
+	
+	<!-- Se enviarán datos a un servidor a través del siguiente formulario HTML.
+	En primer lugar, cuando se envíe el formulario los datos facilitados se destinan a "/home".
+	Como puede haber información sensible se realiza mediante el método 'post'.
+	Posteriormente el usuario podrá escribir en una caja de texto. 
+	El atributo'name' es necesario para identificar los datos en el servidor. 
+	El botón envía la información al servidor.
+	Finalmente, solo figura el mensaje si el servidor así lo considera en función del éxito o fracaso de la operación anterior.-->
+	
+	<form th:action="@{/home}" method ="post">
+		Introduce cuenta <input type="text" name="idCuenta" >
+	    <p><input type="submit" value="Entrar"></p>
+	</form>
+	
+	<h4 th:text="${mensaje}" style="color:red"></h4>
+	</fieldset>
+</body>
+</html>

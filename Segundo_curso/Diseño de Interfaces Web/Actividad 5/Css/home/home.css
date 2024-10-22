@@ -1,0 +1,383 @@
+
+/*-------------------------------------------------CSS distribución página-------------------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+
+.contenedor > *{
+  padding:8px; 
+}
+
+
+.contenedor{
+    border-radius: 4px;
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    display:grid;
+    grid-template:
+        "Navegador" 96px
+        "Main"  auto /*lo suyo es poner el main para que se adapte con el contenido*/
+        "Footer" 192px
+}
+
+
+/*--------------------------------------------CSS Navegador-----------------------------------------------------------*/
+
+.navegador{
+    grid-area: Navegador;
+    background: linear-gradient(270deg, #CFEDD2 0%, #DEEDCF 0.01%, #FFF 98.09%);
+    border-bottom: black 1px solid;
+}
+
+
+.contenedorNavegadorHome{
+    display:grid;
+    /*grid-template:
+        "vacionav1 logo vacionav2 opciones vacionnav3 buscardor vacionav4 avatar vacionav5"/
+            32px    97px  auto       443px    auto       413px     auto      84px     32px
+    */
+    grid-template:
+        "vacionav1 logo vacionav2 opciones vacionnav3 Registro vacionnavor buscardor  vacionav5"/
+            32px    97px  auto       443px    auto      235px     75px       413px     32px
+}
+
+
+.logo{
+    grid-area:logo;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.opciones{
+    grid-area:opciones;
+    display: flex;
+    align-items: flex-start;
+   padding-top: 16px;
+    gap: 48px;
+}
+
+
+.MisActi{
+    height: 42px;
+    width: 148px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid  #111D38;
+    background: #FFF;
+    color:#111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.MisActi:hover{
+    border: 1px solid  #111D38;
+    color:#111D38;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.Servi{
+    height: 42px;
+    width: 99px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid #7D02A6;
+    background: #FFF;
+    color: #7D02A6;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.Servi:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.Contac{
+    height: 42px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid #7D02A6;
+    background: #FFF;
+    color: #7D02A6;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.Contac:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.barraBuscar{
+    grid-area:buscador;
+    color:#111D38;
+    font-size: 24px;
+    font-style: normal;
+    font-family: Cantarell;
+    width: 500px;
+    height: 42px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.input-icon{
+    margin-left: 90%;
+   width: 30px;
+   height: 30px;
+   transform: translateY(-120%);
+}
+
+
+/*--------------------------------------------CSS Navegador index-----------------------------------------------------------*/
+
+.rb {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+.registroglo{
+    grid-area: registro;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    margin-left: -50px;
+    margin-top: 16px;
+}
+
+
+.botonini{
+    display: flex;
+    width: 124px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    border: 1px solid var(--contraste-color-lila, #7D02A6);
+    background: var(--Fondo, #FFF);
+}
+
+
+.iniciarses{
+    color: var(--contraste-color-lila, #7D02A6);
+
+    /* Texto/Tarjeta */
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px; /* 140% */
+}
+
+
+.botonreg{
+    display: flex;
+    width: 95px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    background: var(--contraste-color-lila, #7D02A6);
+}
+
+
+.regses{
+    border-radius: 20px;
+   color: white;
+}
+
+.botonreg:hover{
+    background-color: rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.90);
+}
+
+.botonini:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+
+.barraBuscarHome{
+    grid-area:buscador;
+    color:#111D38;
+    font-size: 24px;
+    font-style: normal;
+    font-family: Cantarell;
+    width: 500px;
+    height: 42px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.input-icon-home{
+    margin-left: 108%;
+   width: 30px;
+   height: 30px;
+   transform: translateY(-50%);
+
+   position: absolute;
+    right: 100px; 
+    top: 6%; 
+}
+
+
+/*----------------------------------------------------CSS del Main-----------------------------------------------------*/
+
+.main{
+    grid-area: Main;
+    margin:0 auto;
+}
+
+
+section{
+    padding:24px;
+
+    display: grid;
+    grid-template: 
+        "hero" 600px
+        "productos" 600px
+        "asesoramiento" 600px
+        "planes" 600px
+        "testimonios" 600px
+}
+
+
+.hero{
+    grid-area: hero;
+    background-color: white;
+}
+
+
+.productos{
+    grid-area: productos;
+    background-color:white;
+}
+
+
+.asesoramiento{
+    grid-area: asesoramiento;
+    background-color: white;
+}
+
+
+.planes{
+    grid-area: planes;
+    background-color:white;
+}
+
+
+.testimonios{
+    grid-area: testimonios;
+    background-color: white;
+}
+
+/*--------------------------------------------CSS del footer-----------------------------------------------------------*/
+
+
+.footer{
+    grid-area: Footer;
+    background: #DEEDCF;
+    border-top: black 1px solid;
+}
+
+
+.contenedorFooter{
+    padding:8px;
+    display: grid;
+    grid-template:
+    "vacio3 privacidad vacio4 Contacto vacio5" 111px/
+        auto   275px    auto  275px     auto;
+
+}
+
+.privacidad{
+    text-align: left;
+    grid-area: privacidad;
+}
+
+.privacidad label{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+}
+
+
+.privacidad p{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px;
+}
+
+
+.Contacto{
+    text-align: left;
+    grid-area: Contacto;
+}
+
+
+.Contacto label{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+}
+
+
+.Contacto p{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px;
+}

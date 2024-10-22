@@ -1,0 +1,52 @@
+
+<!--DECLARO LAS ETIQUETAS DE LA CABEZERA DE LA BIBLIOTECA-->
+<!ELEMENT Biblioteca (Documentos)>
+<!ELEMENT Documentos (libros, revistas, periodicos)>
+
+<!--DECLARO TODAS LAS ETIQUETAS DE TIENEN QUE CONTENER LOS LIBROS-->
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, indice, capitulos, sinopsis)>
+<!ELEMENT capitulos (capitulo+)>
+<!ELEMENT capitulo (contenido)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!--DECLARO LOS ATRIBUTOS DE LAS ETIQUETAS QUE HACEN REFERENCIA A LOS LIBROS-->
+<!ATTLIST libro id ID #REQUIRED>
+<!ATTLIST libro tipo (novela | infantil | didactico) #REQUIRED>
+<!ATTLIST libro paginas CDATA #REQUIRED>
+<!ATTLIST capitulo paginas CDATA #REQUIRED>
+
+<!--DECLARO LAS ETIQUETAS PARA LAS REVISTAS-->
+<!ELEMENT revistas (revista+)>
+<!ELEMENT revista (titulo, indice, secciones)>
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT seccion (contenido)>
+
+
+<!--DECLARO LOS ATRIBUTOS DE LAS REVISTAS-->
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista paginas CDATA #REQUIRED>
+<!ATTLIST revista tipo (informatica | corazon | coches | investigacion | otras) #REQUIRED>
+<!ATTLIST seccion paginas CDATA #REQUIRED>
+
+
+<!--DECLARO LAS ETIQUETAS PARA LOS PERIODICOS-->
+<!ELEMENT periodicos (periodico+)>
+<!ELEMENT periodico (titulo, indice, sections, contenido)>
+<!ELEMENT sections (section+)>
+<!ELEMENT section (articulo)>
+
+<!ELEMENT articulo (#PCDATA)>
+
+
+
+<!--DECLARO LOS ATRIBUTOS DE LAS ETIQUETAS-->
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo (nacionales | internacionales) #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+<!ATTLIST section clase (economica | opinion | deportes | nacional | internacional) #REQUIRED>
+<!ATTLIST articulo autor CDATA #REQUIRED>

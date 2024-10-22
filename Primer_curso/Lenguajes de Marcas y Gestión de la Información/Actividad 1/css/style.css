@@ -1,0 +1,468 @@
+/*CABECERA*/
+main{
+
+    background-color: rgb(204, 231, 249);
+}
+
+body{
+    
+    background-color: rgb(204, 231, 249);
+}
+
+header{
+    /*border: 2px solid black;*/
+    background-color: rgb(204, 231, 249);
+    width: 100%;
+    height: 130px; /*CAMBIAR A AUTO*/
+    display: flex;
+}
+
+
+.logo{
+   /* border: 1px solid rebeccapurple;*/
+    width: 30%;
+    height: 100%;
+    
+}
+
+.enlaces{
+   /* border: 1px solid green;*/
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px; 
+
+}
+
+
+.boton {
+    /*display: flex;*/
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+  
+.boton button {
+    background-color: #000e79;
+    border: none;
+    color: rgb(246, 255, 247);
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace ;
+    /*display: inline-block;*/
+    /*border-radius: 4px;*/
+}
+  
+
+
+/*SECTION PRINCIPAL*/
+
+.titulo{
+    color:rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 140px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+}
+.titulo2{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.principal{
+    background-image: url("../img/images003.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+   /* border: 2px solid black;*/
+    width: 100%;
+    height: 800px; /*CAMBIAR A AUTO*/
+    display: flex;
+  
+
+}
+
+/*.principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4; /* Cambia este valor para hacer la imagen más o menos oscura 
+}*/
+
+
+.vacia1{
+    /*border: 1px solid rebeccapurple;*/
+    width: 30%;
+    height: 100%;
+}
+
+.contenido{
+    /*border: 1px solid green;*/
+    width: 40%; 
+    height: 100%;
+    margin-top: 100px;
+
+}
+
+.vacia2{
+    /*border: 1px solid red;*/
+    width: 30%;
+    height: 100%;
+}
+
+/*TEXTO SERVICIOS*/
+
+h1{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+/* SECTION SERVICIOS*/
+
+.servicios{
+   /* border: 2px solid black;*/
+   /* width: 100%;*/
+    height: auto; 
+    display: flex;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+
+.servicio1{
+    /*border: 1px solid rebeccapurple;*/
+    width: 20%;
+    height: 100%;
+    /*box-shadow: 10px 10px 10px rgb(59, 53, 53);*/
+    
+}
+.servicio1 img{
+    box-shadow: 10px 10px 10px rgb(59, 53, 53);
+}
+.servicio2 img{
+    box-shadow: 10px 10px 10px rgb(59, 53, 53);
+}
+.servicio3 img{
+    box-shadow: 10px 10px 10px rgb(59, 53, 53);
+}
+.servicio4 img{
+    box-shadow: 10px 10px 10px rgb(59, 53, 53);
+}
+.servicio5 img{
+    box-shadow: 10px 10px 10px rgb(59, 53, 53);
+}
+
+.servicio2{
+    /*border: 1px solid green;*/
+    width: 20%;
+    height: 100%;
+    
+}
+
+.servicio3{
+    /*border: 1px solid red;*/
+    width: 20%;
+    height: 100%;
+}
+.servicio4{
+    /*border: 1px solid red;*/
+    width: 20%;
+    height: 100%;
+}
+.servicio5{
+    /*border: 1px solid red;*/
+    width: 20%;
+    height: 100%;
+}
+.serlogos{
+    width: 120px;
+    height: 120px;
+}
+
+
+/*SECTION HABITACION 1*/
+
+.habitacion1{
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: 450px; 
+    margin-top: 5%; 
+}
+
+.foto1{
+   /* border: 1px solid rebeccapurple;*/
+    width: 900px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    /*background-color: red;*/
+} 
+
+.habitaciones{
+    width: 700px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: 10px;
+   
+}
+
+.texto1{
+    /*border: 1px solid rebeccapurple;*/
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    float: right;
+}
+
+
+/*SECTION HABITACION 2*/
+
+
+
+.habitacion2{
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: 450px; 
+    margin-top: 5%;
+    
+}
+
+.texto2{
+    /*border: 1px solid rebeccapurple;*/
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    float: left; 
+}
+
+.foto2{
+    /*border: 1px solid rebeccapurple;*/
+    width: 900px;
+    height: 100%;
+    text-align: center;
+    float: right;
+    /*background-color: rebeccapurple;*/
+}
+
+.foto2 img{
+    width: 700px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+
+/*ASIDE*/
+
+h1{
+    text-align: center;
+}
+
+aside img{
+    width: 200px;
+    height: 200px;
+    padding: 7%;
+    margin-left: 215%;
+    margin-bottom: 50px;
+    float: bottom; 
+ 
+}
+aside{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(204, 231, 249);
+    display: inline-flex;
+    
+}
+
+aside h3{
+    text-align: right;
+    font-size: 40px;
+}
+
+/*FOOTER*/
+
+footer{
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: auto; 
+    display: flex;
+    background-color: rgba(204, 231, 249, 0.400);
+}
+
+.info1{
+    /*border: 1px solid rebeccapurple;*/
+    width: 30%;
+    height: 100%;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.icono{
+    width: 35px;
+    height: 35px;
+}
+
+
+.logors{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.info2{
+    /*border: 1px solid red;*/
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+
+.infomedio{
+    
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*TIPOS DE MEDIO*/
+
+@media (max-width: 700px){
+    header{
+        width:98%;            
+    }
+    nav{
+        width: 98%;
+    }
+
+    body{
+        background-color: #b3660f;
+    }
+
+    main{
+        width: 98%;
+    }
+    section{
+        width: 98%;
+    }
+
+    titulo{
+        width: 98%;
+    }
+    titulo2{
+        width: 98%;
+    }
+    principal{
+        width: 98%;
+    }
+    servicios{
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 576px){
+    
+    header{
+  
+    grid-template:
+      "cabecera cabecera" 100px
+      "navbar   navbar"   50px
+      "sidebar  main"     auto
+      "footer   footer"   100px /
+      200px     auto; 
+  }
+    
+}
+
+/*@media(max-width: 700px){
+    .habitacion1{
+        width: auto;
+        height: 380px; 
+        margin-top: 7%;
+    }
+
+    .texto1{
+        width: auto;
+        height: 550px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        float: right;
+        margin-top: 5px;
+        background-color: green;
+    }
+
+    .foto1{
+        float: none; 
+    }
+   
+    .foto1 img{
+        text-align: none;
+        width: 370px;
+        height: 370px;
+        border-radius: 10px;
+        box-shadow: 10px;
+        margin: 5px;
+    }
+
+
+    .servicios{
+        width: auto;
+        
+    }
+
+    .habitacion2{
+        width: auto;
+        height: 450px; 
+        margin-top: 7%;
+    }
+
+    .foto2{
+        float: left;
+    }
+
+    .foto2 img{
+        width: 370px;
+        height: 370px;
+        text-align: none;
+        border-radius: 10px;
+        box-shadow: 10px;
+        margin: 5px;
+        float: none;
+    }
+
+    .texto2{
+        width: auto;
+        height: 550px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        float: right;
+        margin-top: 5px;
+        background-color: rgb(128, 0, 77);
+    }
+
+    .footer{
+       z-index: 3;
+       background-color: black;
+    }
+
+
+}*/
+

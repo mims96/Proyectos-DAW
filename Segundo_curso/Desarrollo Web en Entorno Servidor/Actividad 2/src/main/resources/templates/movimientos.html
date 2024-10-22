@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ver movimientos</title>
+</head>
+<body style="background-image: url('/money.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <fieldset style="background-color:white; width: 25%; text-align:center; margin: auto; border: 5px solid #93C572; border-radius: 10px;">
+	
+	<h3>Usted va a ver los movimientos de la cuenta: <span th:text="${session.cuenta != null ? session.cuenta.idCuenta : 'Guest'}"></span></h3>
+	<h4>Saldo: <span th:text="${session.cuenta != null ? session.cuenta.saldo : 'No disponible'}"></span> €</h4>
+
+	<table border="2" width="100%">
+    <tr>
+        <th>Cantidad</th>
+        <th>Fecha</th>
+        <th>Tipo</th>
+    </tr>
+    
+    <!-- Se genera un bucle para que se lean todas las filas de la tabla de movimientos de la BBDD.
+    Es decir, por cada movimiento encontrado se crea una nueva fila (tr) en la tabla que aparecerá por pantalla.
+    La variable movimiento recoge un elemento de la lista de movimientos en cada iteración.
+    Con respecto a las columnas, en cada celda respectiva se muestra el valor del atributo (cantidad, fecha u operación) del objeto movimiento.-->
+    <tr th:each="movimiento : ${movimientos}">
+			<td th:text= "${movimiento.cantidad}"></td>
+			<td th:text="${movimiento.fecha}"></td>
+			<td th:text="${movimiento.operacion}"></td>
+	</tr>
+	</table>
+
+	<br></br>
+	<a th:href="@{/menu}">Volver al menú de opciones</a>	
+	<br></br>
+	<a th:href="@{/logout}">Cerrar sesión</a>	
+	<br></br>
+	</fieldset>
+</body>
+</html>

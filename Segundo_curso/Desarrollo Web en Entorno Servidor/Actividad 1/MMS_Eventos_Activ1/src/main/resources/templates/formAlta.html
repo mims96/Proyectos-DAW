@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>MMS_Eventos_Activ1</title>
+</head>
+<body>
+	<H1>Formulario de alta de eventos</H1>
+	
+	<!-- En el formulario se incluyen inputs de tipo texto.
+		 En el name se pone el mismo nombre de la propiedad del evento o atributos privados del javabean.
+		 El formulario llega por post porque lo que teclean no debe salir por la barra de navegación. 
+		 Se invocará al PostMapping en el controlador.
+		 La acción que se va a procesar es la que va a continuación del @.-->
+	<form th:action="@{/eventos/alta}" method="post">
+	
+		<label for="nombre">Nombre del evento: </label>
+		<input type="text" name="nombre" placeholder="Cumpleaños de Javi">
+		<br></br>
+		
+		<label for="descripcion">Descripción: </label>
+		<input type="text" name="descripcion" placeholder="Castillo inflable y dulces">
+		<br></br>
+		
+		<label for="fechaInicio">Fecha de inicio: </label>
+		<input type="date" name="fechaInicio">
+		<br></br>
+		
+		<label for="duracion">Duración del evento: </label>
+		<input type="text" name="duracion" placeholder="5">
+		<br></br>
+		
+		<label for="direccion">Dirección: </label>
+		<input type="text" name="direccion" placeholder="Calle de los Rubios, 90">
+		<br></br>
+		
+		<label for="estado">Seleccione un estado: </label>
+		<select id="estado" name="estado">
+		<option value="activo" selected>Activo</option>
+		<option value="cancelado">Cancelado</option>
+		</select>
+		<br></br>
+		
+		<label for="destacado">¿Es destacado el evento?</label>
+		<select id="destacado" name="destacado">
+		<option value="s" selected>S</option>
+		<option value="n">N</option>
+		</select>
+		<br></br>
+		
+		<label for="aforoMaximo">Aforo máximo del evento: </label>
+		<input type="text" name="aforoMaximo" placeholder="38">
+		<br></br>
+		
+		<label for="minimoAsistencia">Mínimo de asistencia: </label>
+		<input type="text" name="minimoAsistencia" placeholder="4">
+		<br></br>
+		
+		<label for="precio">Precio: </label>
+		<input type="text" name="precio" placeholder="340">
+		<br></br>
+		
+		<label for="tipo.nombre">Tipo de evento: </label>
+		<select id="tipo.nombre" name="tipo.nombre">
+		<option value="cumpleaños" selected>Cumpleaños</option>
+		<option value="concierto">Concierto</option>
+		<option value="despedida">Despedida</option>
+		<option value="boda">Boda</option>
+		</select>
+		<br></br>
+		<br></br>
+
+		
+		<input type="submit" value="¡Añadir evento!">
+	</form>
+	
+	<br></br>
+	
+	<!-- Se da la posibilidad al usuario de volver al index -->
+	<a th:href="@{/}">Volver al listado de activos</a>
+
+</body>
+</html>

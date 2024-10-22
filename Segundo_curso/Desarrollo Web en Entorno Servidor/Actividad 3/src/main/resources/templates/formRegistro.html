@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de registro</title>
+</head>
+<body>
+<h1>Formulario de alta de usuario</h1>
+<!-- En la ruta siguiente se deben rellenar los siguientes campos para almacenarlos en la BBDD -->
+<form th:action="@{/registro}" method="post">
+	<label for="username">Username: </label>
+	<input type="text" name="username">
+	<br></br>
+	<label for="password">Password: </label>
+	<input type="text" name="password">
+	<br></br>
+	<label for="nombre">Nombre: </label>
+	<input type="text" name="nombre">
+	<br></br>
+	<label for="apellidos">Apellidos: </label>
+	<input type="text" name="apellidos">
+	<br></br>
+	<label for="direccion">Dirección: </label>
+	<input type="text" name="direccion">
+	<br></br>
+	<br></br>
+	<input type="submit" value="¡Registrarme!">
+</form>
+
+<!-- Se da la oportunidad de volver al listado principal, y si el usuario ya existe salta un mensaje. -->
+<br></br>
+<a th:href="@{/}">Volver al listado principal</a>
+<br></br>
+<span th:text="${mensaje}"></span>
+
+</body>
+</html>

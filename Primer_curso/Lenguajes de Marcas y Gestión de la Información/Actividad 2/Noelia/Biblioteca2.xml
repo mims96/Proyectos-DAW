@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "Biblioteca.xsd">
+
+
+
+    <documentos>
+    
+        <libros>
+            <libro id="L0001" tipo_clase="novela" paginas_libro="1000"> 
+            
+                <titulo></titulo>
+                <indice></indice>
+
+                <capitulos>
+
+                    <capitulo paginas_capitulo="50">
+                        <titulo></titulo>
+                        <contenido enlace="enlace_capitulo1">
+                            <informacion></informacion> <!-- La información deberá de ir como nodo elemento a no ser que se especifique lo contrario-->
+                        </contenido> 
+                    </capitulo>
+
+                    <capitulo  paginas_capitulo="70">
+                        <titulo></titulo>
+                        <contenido enlace="enlace_capitulo2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </capitulo>
+
+                </capitulos>
+
+                <sinopsis>
+                </sinopsis>
+            
+            </libro>
+
+            <libro id="L0002" tipo_clase="infantil" paginas_libro="2000"> 
+            
+                <titulo></titulo>
+                <indice></indice>
+
+                <capitulos>
+
+                    <capitulo paginas_capitulo="60">
+                        <titulo></titulo>
+                        <contenido enlace="enlace_capitulo1">
+                            <informacion></informacion> 
+                        </contenido> 
+                    </capitulo>
+
+                    <capitulo paginas_capitulo="90">
+                        <titulo></titulo>
+                        <contenido enlace="enlace_capitulo2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </capitulo>
+
+                </capitulos>
+
+                <sinopsis>
+                </sinopsis>
+            
+            </libro>
+
+            <libro id="L0003" tipo_clase="didactico" paginas_libro="1250"> 
+            
+                <titulo></titulo>
+                <indice></indice>
+
+                <capitulos>
+
+                    <capitulo paginas_capitulo="120">
+                        <titulo>¿titulo?</titulo>
+                        <contenido enlace="enlace_capitulo1">
+                            <informacion></informacion> 
+                        </contenido> 
+                    </capitulo>
+
+                    <capitulo paginas_capitulo="20">
+                        <titulo></titulo>
+                        <contenido enlace="enlace_capitulo2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </capitulo>
+
+                </capitulos>
+
+                <sinopsis>
+                </sinopsis>
+
+            </libro>
+
+        </libros>
+     
+
+        <revistas>
+
+            <revista id="R1" tipo_clase="informatica" paginas_revista="20">
+                <titulo></titulo>
+                <numero></numero>
+                <indice></indice>
+                <secciones>
+                    <seccion paginas_seccion="5">
+                        <contenido enlace="enlace_seccion_1">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                    <seccion paginas_seccion="15">
+                        <contenido enlace="enlace_seccion_2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                </secciones>
+            </revista>
+            <revista id="R2" tipo_clase="corazon" paginas_revista="30">
+                <titulo></titulo>
+                <numero></numero>
+                <indice></indice>
+                <secciones>
+                    <seccion paginas_seccion="20">
+                        <contenido enlace="enlace_seccion_1">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                    <seccion paginas_seccion="10">
+                        <contenido enlace="enlace_seccion_2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                </secciones>
+            </revista>
+
+            <revista id="R3" tipo_clase="coches" paginas_revista="40">
+                <titulo></titulo>
+                <numero></numero>
+                <indice></indice>
+                <secciones>
+                    <seccion paginas_seccion="20">
+                        <contenido enlace="enlace_seccion_1">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                    <seccion paginas_seccion="20">
+                        <contenido enlace="enlace_seccion_2">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                </secciones>
+            </revista>
+
+            <revista id="R4" tipo_clase="investigacion" paginas_revista="50">
+                <titulo></titulo>
+                <numero></numero>
+                <indice></indice>
+                <secciones>
+                    <seccion paginas_seccion="30">
+                        <contenido enlace="enlace_seccion_1">
+                             <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                    <seccion paginas_seccion="20">
+                        <contenido enlace="enlace_seccion_2">
+                             <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                </secciones>
+            </revista> 
+
+            <revista id="R5" tipo_clase="otras" paginas_revista="60">
+                <titulo></titulo>
+                <numero></numero>
+                <indice></indice>
+                <secciones> 
+                    <seccion paginas_seccion="30">
+                        <contenido enlace="enlace_seccion_1">
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                    <seccion paginas_seccion="30">
+                        <contenido enlace="enlace_seccion_2">    
+                            <informacion></informacion> 
+                        </contenido>
+                    </seccion>
+                </secciones>
+            </revista>
+
+        </revistas>
+
+        <periodicos>
+
+            <periodico id="P0001" tipo_clase="nacionales" fecha_publicacion="10/10/2022">
+                <indice></indice>
+                <seccionesPeriodico>
+                    <seccionPeriodico tipo_seccion="economica">
+                        <articulo autor="anonimo">
+                            <contenido enlace="enlace_info_articulo_1">
+                                <informacion></informacion> 
+                            </contenido>
+                        </articulo>
+                    </seccionPeriodico>
+                </seccionesPeriodico>
+            </periodico>       
+
+            <periodico id="P0002" tipo_clase="internacionales" fecha_publicacion="10/10/2022">
+                <indice></indice>
+                <seccionesPeriodico>
+                    <seccionPeriodico tipo_seccion="opinion">
+                        <articulo autor="anonimo">
+                            <contenido enlace="enlace_info_articulo_1">
+                                <informacion></informacion> 
+                            </contenido> 
+                        </articulo>
+                    </seccionPeriodico>
+                </seccionesPeriodico>
+
+            </periodico>   
+            
+        </periodicos>
+
+    </documentos>
+
+</Biblioteca>

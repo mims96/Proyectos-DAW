@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Extraer dinero</title>
+</head>
+<body style="background-image: url('/money.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <fieldset style="background-color:white; width: 25%; text-align:center; margin: auto; border: 5px solid #93C572; border-radius: 10px;">
+	
+	<h3>Usted va a extraer dinero de la cuenta: <span th:text="${session.cuenta != null ? session.cuenta.idCuenta : 'Guest'}"></span></h3>
+	<h4>Saldo: <span th:text="${session.cuenta != null ? session.cuenta.saldo : 'No disponible'}"></span> €</h4>
+	
+	<form th:action="@{/extraer}" method ="post">
+		Introduce cantidad <input type="text" name="saldo" >
+	    <p><input type="submit" value="Extraer"></p>
+	</form>	
+	
+	<h4 th:text="${mensajePositivo}" style="color:green"></h4>
+	<h4 th:text="${mensajeNegativo}" style="color:red"></h4>
+	<a th:href="@{/menu}">Volver al menú de opciones</a>	
+	<br></br>
+	<a th:href="@{/logout}">Cerrar sesión</a>	
+	<br></br>
+	</fieldset>
+</body>
+</html>

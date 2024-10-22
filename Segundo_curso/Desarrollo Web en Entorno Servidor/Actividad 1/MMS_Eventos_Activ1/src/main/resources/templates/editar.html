@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>MMS_Eventos_Activ1</title>
+</head>
+<body>
+	<!-- En este caso, editar cumple la función de ver los datos de un evento concreto -->
+	<h1>Detalle de evento</h1>
+	
+	<!-- Lo que va entre span, o en última instancia de "p", significa que es ese atributo el que hay que pintar. -->
+	<p>Identificador del evento: <span th:text="${evento.idEvento}"></span></p>
+	<p>Nombre: <span th:text="${evento.nombre}"></span></p>
+	<p>Descripción: <span th:text="${evento.descripcion}"></span></p>
+	<!-- Ahora va a venir la fecha de inicio, y como va a venir en otro formato, se aclara el formato que realmente se quiere: -->
+	<p>Fecha de inicio: <span th:text="${#dates.format(evento.fechaInicio, 'dd-MM-yyyy')}"></span></p>
+	<p>Duración: <span th:text="${evento.duracion}"></span></p>
+	<p>Dirección: <span th:text="${evento.direccion}"></span></p>
+	<p>Estado: <span th:text="${evento.estado}"></span></p>
+	<p>Destacado: <span th:text="${evento.destacado}"></span></p>
+	<p>Aforo máximo: <span th:text="${evento.aforoMaximo}"></span></p>
+	<p>Mínimo de asistencia: <span th:text="${evento.minimoAsistencia}"></span></p>
+	<p>Precio: <span th:text="${evento.precio}"></span></p>
+	<p>Nombre del tipo de evento: <span th:text="${evento.tipo.nombre}"></span></p>
+	
+	<!-- Todo esto será implementado en el EventoController -->
+	
+	<br></br>
+	
+	<!-- Invocamos a la url "/", que es el home, por lo que se representa y se vuelve allí -->
+	<a th:href="@{/}">Volver al listado de activos</a>
+
+</body>
+</html>

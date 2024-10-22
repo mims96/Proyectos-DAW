@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ingresar dinero</title>
+</head>
+<body style="background-image: url('/money.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <fieldset style="background-color:white; width: 25%; text-align:center; margin: auto; border: 5px solid #93C572; border-radius: 10px;">
+	
+	<h3>Usted va a realizar un ingreso en la cuenta: <span th:text="${session.cuenta != null ? session.cuenta.idCuenta : 'Guest'}"></span></h3>
+	
+	<!-- De lógica similar a la línea de código anterior, si la cuenta de la sesión no es nula (existe)
+	entonces aparecerá el saldo de la misma. En caso contrario, se muestra un texto alternativo. -->
+	<h4>Saldo: <span th:text="${session.cuenta != null ? session.cuenta.saldo : 'No disponible'}"></span> €</h4>
+	
+	<!-- La idea es muy similar al home, solo que se debe especificar que lo que se escriba pertenece al atributo name="saldo". -->
+	<form th:action="@{/ingresar}" method ="post">
+		Introduce cantidad <input type="text" name="saldo" >
+	    <p><input type="submit" value="Ingresar"></p>
+	</form>	
+	
+	<h4 th:text="${mensajePositivo}" style="color:green"></h4>
+	<h4 th:text="${mensajeNegativo}" style="color:red"></h4>
+	<a th:href="@{/menu}">Volver al menú de opciones</a>	
+	<br></br>
+	<a th:href="@{/logout}">Cerrar sesión</a>	
+	<br></br>
+	</fieldset>
+</body>
+</html>

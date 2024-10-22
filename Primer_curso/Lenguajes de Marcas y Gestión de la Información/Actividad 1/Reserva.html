@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario_Reserva_Hotel</title>
+    <link rel="stylesheet" href="css\cabezera.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\Reserva.css">
+    <link rel="stylesheet" href="css\sponsors.css">
+</head>
+<header></header>
+<nav class="menu">
+    <li>Menu
+        <ul class="desplegable">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Actividades.html">Actividades</a></li>
+            <li><a href="Quienessomos.html">Quienes somos</a></li>
+            <li><a href="Reserva.html">Reserva</a></li>
+        </ul>
+    </li>
+    <li>Publicidad</li>
+    <li>Noticias</li>
+    <li>Publicaciones</li>
+</nav>
+</br>
+<main>
+    <form action="procesarPeticion.jsp" method="post">
+        <h3>DATOS PERSONALES</h3>
+        <fieldset class="cajas">
+                <div class="personales">
+                    <label for="nombre">Nombre:
+                    <input id="nombre" type="text" name="nombre" autofocus required/></label>
+                    <label for="1apellido">Primer Apellido: 
+                    <input id="1apellido" type="text" name="1apellido" required/></label>
+                    <label for="2apellido">Segundo Apellido:
+                    <input id="2apellido" type="text" name="2apellido" required/></label>
+                
+            
+                    <label for="DNI"> DNI: 
+                    <input id="DNI" type="numer" name="DNI" required/></label>
+                    <label for="telefono">Telefono: 
+                    <input id="telefono" type="tel" name="telefono" required/></label>
+                    <label for="email">Email: 
+                    <input id="email" type="email" name="email" required/></label>
+                
+            
+                    <label for="calle">Calle: 
+                    <input id="calle" type="text" name="calle" required/></label>
+                    <label for="numero">Numero: 
+                    <input id="numero" type="numeber" name="numero" required/></label>
+                    <label for="piso">Piso: 
+                    <input id="piso" type="number" name="piso"required/></label>
+                    <label for="puerta">Puerta: 
+                    <input id="puerta" type="number" name="puerta"required/></label>
+                
+            
+                    <label for="ciudad">Ciudad: 
+                    <input id="ciudad" type="text" name="ciudad" required/></label>
+                    <label for="CP">Codigo Postal: 
+                    <input id="CP" type="number" name="CP" required/></label>
+                    <label for="pais">Pais: 
+                    <input id="pais" type="text" name="pais" required/></label>
+    
+                </div>
+            </fieldset>
+        
+       </br>
+        <h3>DATOS DE LA RESERVA</h3>
+        <fieldset class="cajas">
+            <div class="reser">
+                <label for="llegada" >Llegada: 
+                <input id="llegada" type="date" name="llegada" required/></label>
+                <label for="salida">Salida: 
+                <input id="salida" type="date" name="salida" required/></label>
+                <label for="personas">Personas: 
+                <select id="personas" >
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                </select></label>
+            
+               
+                <label for="cama">Tipo de Cama:
+                <select id="cama">
+                    <option value="0"></option>
+                    <option value="Individual">Individual</option>
+                    <option value="Doble">Doble</option>
+                    <option value="King">King Size</option>
+                </select></label>
+                <label for="habitación">Tipo Habitación
+                <select id="habitacion">
+                    <option value="0"></option>
+                    <option value="Standart">Standart</option>
+                    <option value="Supreme">Supreme</option>
+                    <option value="Deluxe">Deluxe</option>
+                </select></label>
+            
+            
+                <label for="regimen">Regimen
+                <select id="regimen" >
+                    <option value="0"></option>
+                    <option value="Media">Media Pension</option>
+                    <option value="completa">Pension Completa</option>
+                    <option value="VIP">Todo Incluido</option>
+                </select></label>
+                </br>
+                </br>
+                <p>El Horario del Check-In es de 15.00 a 22.00 en caso de llegada tardia marcar el recuadro</p>
+                </br>
+                <label>
+                <input type="checkbox" name="horario" value="y"/> LLegada tardia</label>
+                <label for="hora">Hora de Llegada
+                <input id="hora" type="time" name="hora"/></label>
+            </div>
+            
+        </fieldset>
+
+        </br>
+        <h3>ACTIVIDADES</h3>
+        <fieldset class="cajas">
+                <ul class="acti">
+                    <li for="Actividades">Excursiones
+                        <input type="checkbox" name="Actividades" value="ex"/>
+                    </li>
+                    <li for="Actividades">BTT Electrica
+                        <input type="checkbox" name="Actividades" value="BTT"/>
+                    </li>
+                    <li for="Actividades">Excursiones a cavallo
+                        <input type="checkbox" name="Actividades" value="cavallo"/>
+                    </li>
+                    <li for="Actividades">SPA
+                        <input type="checkbox" name="Actividades" value="spa"/>
+                    </li>
+                    <li for="Actividades">Masajes
+                        <input type="checkbox" name="Actividades" value="masaje"/>
+                    </li>
+                    <li for="Actividades">Manicura
+                        <input type="checkbox" name="Actividades" value="manos"/>
+                    </li>
+                    <li for="Actividades">Salidas Turisticas
+                        <input type="checkbox" name="Actividades" value="turistico"/>
+                    </li>
+                    <li for="Actividades">Recorrido en Barco
+                        <input type="checkbox" name="Actividades" value="barco"/>
+                    </li>
+                    <li for="Actividades">Submarinismo
+                        <input type="checkbox" name="Actividades" value="Sub"/>
+                    </li>
+                </ul>
+           
+        </fieldset>
+
+         </br>
+         <h3>EXTRAS</h3>
+         <fieldset class="cajas">
+                <ul class="extras">
+                    <li for="Extras">Coche de Alquiler
+                        <input type="checkbox" name="Extras" value="coche"/> 
+                    </li>
+                    <li for="Extras">Moto de Alquiler
+                        <input type="checkbox" name="Extras" value="moto"/>
+                    </li>
+                    <li for="Extras">Recogida en Aeropuerto
+                        <input type="checkbox" name="Extras" value="transporte"/>
+                    </li>
+                    <li for="Extras">Servicio de Guarderia
+                        <input type="checkbox" name="Extras" value="guarderia"/>
+                    </li>
+                </ul>
+         </fieldset>
+
+        </br>
+        <div class="leer">
+         <label for="terminos"> Leer y Aceptar los terminos de uso
+            <input type="checkbox" name="terminos" value="y"/></label>
+        </div>
+
+        </br>
+        </br>
+        <div class="terminos">
+            <input type="submit" name="Enviar" value="Enviar"/>
+            <input type="reset" name="Reset" value="Resetear formulario"/>
+            <input type="button" name="Cancelar" value="Cancelar"/>
+            
+        </div>
+        
+    </form>
+    </main>
+   
+    <aside>
+        <h3>PUBLICIDAD</h3>
+        <div class="sponsor">
+            <a href="https://amigosboattrips.com/es" target="_blank">
+                <img src="img\boattrips.jpg">
+            </a>
+            <a href="https://www.menorcaacavall.com/es/inicio" target="_blank">
+                <img src="img\rutas cavallo.jpg">
+            </a>
+            <a href="https://guiasmenorca.com/es/inicio/" target="_blank">
+                <img src="img\guias turisticos.jpg">
+            </a>
+            <a href="http://menorcacyclingtours.com/" target="_blank">
+                <img src="img\menorca btt.jpg">
+            </a>
+            <a href="https://bluedivemenorca.com/?gclid=CjwKCAjw586hBhBrEiwAQYEnHakGBnZWJqqix905BcLxzA-QArHCdt5jBqWweo0KILJdBFKRc8RsdRoCSrkQAvD_BwE" target="_blank">
+                <img src="img\submarinismo.jpg">
+            </a>
+        </div>
+    </aside>
+    </br>
+    </br>
+
+    <footer class="footer">
+        <hr/>
+        <h3>HABITACIONES</h3>
+        <div class="habitaciones">
+            <img src="img\imagenhabitaciones1.jpg">
+            <img src="img\imagenhabitaciones2.jpg">
+            <img src="img\imagenhabitaciones3.jpg">
+            <img src="img\imagenhabitaciones4.jpg">
+            <img src="img\imagenhabitaciones5.jpg">
+            <img src="img\imagenhabitaciones6.jpg">
+        </div>
+        <hr/>
+        <div class="final">
+            <div class="info1" > 
+
+                <H3>SERVICIO AL CLIENTE</H3>
+
+                <h5> <img class="icono" src="icono/telefono.png" alt="tel" >Contáctanos al 926-844-884</h5>
+                <h5> <img class="icono" src="icono/arroba.png" alt="tel" >Envía un correo a ayuda@trebaluguer.com</h5>
+
+            </div>
+
+            <div class="infomedio" > 
+                <h3>SÍGUENOS</h3>
+                <img class="logors" src="logos/instagram.png" alt="insta">
+                <img class="logors" src="logos/facebook.png" alt="faceb">
+                <img class="logors" src="logos/tiktok.png" alt="tiktok">
+                <img class="logors" src="logos/twitter.png" alt="tw">
+            
+            </div>
+       
+            <div class="info2">
+                <h3>Copyright 2023©</h3>
+                <h3>Para ver el aviso de privacidad, accede a trebaluguer.com/aviso</h3>
+            </div>
+        </div> 
+    </footer>
+</html>
+

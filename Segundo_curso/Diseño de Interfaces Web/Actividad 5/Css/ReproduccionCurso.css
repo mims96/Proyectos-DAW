@@ -1,0 +1,378 @@
+.contenedor{
+    border-radius: 4px;
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    display:grid;
+    grid-template:
+        "Navegador" 96px
+        "contenedorSecciones"  auto /*lo suyo es poner el main para que se adapte con el contenido*/
+        "Footer" 192px
+
+}
+/*CSS NAVEGADOR*/
+
+.navegador{
+    grid-area: Navegador;
+    background: linear-gradient(270deg, #CFEDD2 0%, #DEEDCF 0.01%, #FFF 98.09%);
+    border-bottom: black 1px solid;
+}
+
+.contenedorNavegador{
+    display:grid;
+    grid-template:
+        "vacionav1 logo vacionav2 opciones vacionnav3 buscardor vacionav4 avatar vacionav5"/
+            32px    97px  auto       443px    auto       413px     auto      84px     32px
+
+}
+
+.logo{
+    grid-area:logo;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.opciones{
+    grid-area:opciones;
+    display: flex;
+    align-items: flex-start;
+   padding-top: 16px;
+    gap: 48px;
+}
+
+.MisActi{
+    height: 42px;
+    width: 148px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid  #111D38;
+    background: #FFF;
+    color:#111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.MisActi:hover{
+    border: 1px solid  #111D38;
+    color:#111D38;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+.Servi{
+    height: 42px;
+    width: 99px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid #7D02A6;
+    background: #FFF;
+    color: #7D02A6;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Servi:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+.Contac{
+    height: 42px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 20px;
+    border: 1px solid #7D02A6;
+    background: #FFF;
+    color: #7D02A6;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Contac:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+.barraBuscar{
+    grid-area:buscador;
+    color:#111D38;
+    font-size: 24px;
+    font-style: normal;
+    font-family: Cantarell;
+    width: 500px;
+    height: 42px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input-icon{
+    margin-left: 108%;
+   width: 30px;
+   height: 30px;
+   transform: translateY(-120%);
+}
+
+.avatar{
+    padding-top: 4px;
+    grid-area:avatar;
+    transform: rotate(-10.199deg);
+}
+.avatar img{
+    width: 75px;
+    height: 75px;
+    border: 5px black solid;
+    border-radius: 35px;
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+    
+}
+
+
+
+/*CSS MAIN*/
+
+.contenido1{
+    display: flex;
+    
+
+}
+
+.titulo1{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+.titulo2{
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+.tituloServicio{
+    background-color: #DEEDCF;
+}
+.titulo3{
+    width: 5%;
+    height: auto;
+}
+
+
+.cajaTextoVideo{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 2%; 
+    background-color: #DEEDCF;
+}
+.textoServicio{
+    
+}
+
+
+
+.tituloServicio{
+    font-family: Lora; 
+    font-size: 48px;
+    
+}
+
+/**/
+
+.contenido2{
+    display: flex;
+    gap: 100px; 
+}
+
+.imagenProfesional{
+    display: grid;
+    padding: 2%;
+}
+
+video{
+    width: 1000px;
+    height: 600px;
+    flex-shrink: 0;
+}
+/**/
+
+.contenido3{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.descripcionServicio{
+    background-color: #CFEDD2;
+}
+
+.textoServicio{
+    font-family: Cantarell;
+    font-size: 24px;
+}
+h3{
+    font-family: Lora; 
+    font-size: 48px;
+}
+p{
+    font-family: Cantarell;
+    font-size: 24px;
+}
+
+
+
+
+.contenido4{ 
+    display:flex;
+    justify-content: center;
+    gap: 216px;
+    padding-bottom: 60px;
+
+}
+
+.boton1{
+    display: flex;
+    width: 549px;
+    height: 40px;
+    font-family: Cantarell;
+    font-size: 24px;
+    padding: 16px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    background: var(--contraste-color-lila, #7D02A6);
+}
+
+.boton1:hover{
+    background-color: rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+.boton2{
+    display: flex;
+    width: 549px;
+    height: 40px;
+    font-family: Cantarell;
+    font-size: 24px;
+    padding: 16px;
+    color:#7D02A6;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    border: 1px solid var(--contraste-color-lila, #7D02A6);
+    background: var(--Fondo, #FFF);
+}
+
+.boton2:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+/*CSS FOOTER*/
+
+.footer{
+    grid-area: Footer;
+    background: #DEEDCF;
+    border-top: black 1px solid;
+}
+
+.contenedorFooter{
+    padding:8px;
+    display: grid;
+    grid-template:
+    "vacio3 privacidad vacio4 Contacto vacio5" 111px/
+        auto   275px    auto  275px     auto;
+
+}
+.privacidad{
+    text-align: left;
+    grid-area: privacidad;
+}
+.privacidad label{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+}
+
+.privacidad p{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px;
+}
+
+.Contacto{
+    text-align: left;
+    grid-area: Contacto;
+}
+
+.Contacto label{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+}
+
+.Contacto p{
+    color: #111D38;
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px;
+}
+
+
+/*MEDIA QUERIES
+
+/*
+TABLET
+@Media screen and (min-width:576px){
+    .container{
+      grid-template: 
+      "cabecera   cabecera"   100px
+      "navbar     navbar"     50px
+      "sidebar    main"       auto
+      "footer     footer"     100px /
+      200PX       auto; 
+   }
+  }
+  
+  DESKTOP
+  @Media screen and (min-width:993px){
+    .container{
+      grid-template: 
+      "cabecera   cabecera    cabecera"   100px
+      "navbar     main        sidebar"    auto
+      "footer     footer      footer"     100px /
+      200PX       auto        200px; 
+   }
+  }
+
+*/
+

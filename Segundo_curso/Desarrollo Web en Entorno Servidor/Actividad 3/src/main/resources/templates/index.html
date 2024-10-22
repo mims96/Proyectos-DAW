@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Página de inicio</title>
+</head>
+<nav> 
+<!-- Esta es la primera vista que tiene un usuario cuando entra en nuestra aplicación.
+Se crean varios botones con rutas que están permitidas para cualquier persona, 
+como los eventos destacados y los activos. En cambio hay otras como "mis reservas" que redirigen 
+al login si no se está autenticado. -->
+	<table width=100%>
+		<tr>
+			<th>Eventos</th>
+			<th><a th:href="@{/eventos/destacados}"><input type="button" value="Destacados"></a></th>
+			<th><a th:href="@{/eventos/activos}"><input type="button" value="Activos"></a></th>
+			<th>	
+				<form action="/desplegable" method="get">
+				    <select name="tipoEvento" onchange="this.form.submit()">
+				        <option value="seleccion">Selecciona un evento</option>
+				        <option value="concierto">Concierto</option>
+				        <option value="despedida">Despedida</option>
+				        <option value="boda">Boda</option>
+				        <option value="cumple">Cumpleaños</option>
+				    </select>
+				</form>
+			</th>
+			<th><a th:href="@{/misReservas}"><input type="button" value="Mis reservas"></a></th>
+			<th><a th:href="@{/login}"><input type="button" value="Login"></a></th>
+			<th><a th:href="@{/registro}"><input type="button" value="Registro"></a></th>
+			<th>Bienvenido, <span th:text="${session.usuario != null ? session.usuario.nombre : 'invitado'}"></span></th>
+		</tr>
+	</table>
+</nav>
+
+<body>
+	<h2>Listado de Eventos Destacados y Activos</h2>
+	<table border="2" width=100%>
+		<tr>
+			<th>Nombre</th>
+			<th>Aforo</th>
+			<th>Fecha Inicio</th>
+			<th>Opciones</th>
+		</tr>
+		<!-- La variable que voy a usar cada objeto de la clase Evento se llama Evento.
+		Hay que decir la fuente de los datos, específicamente por el atributo eventos.
+		En los td se pone el contenido y se indica que todo lo que viene es de tipo texto para las 
+		3 primeras columnas. Se añaden expresiones del lenguaje y se determina la propiedad 
+		(nombre del atributo de la clase Evento).
+		
+		En la cuarta columna se pinta el evento que se indique por su id que llega por parámetro de path.
+		Para la url que se va a generar en el enlace se necesita un GetMapping. -->
+		<tr th:each ="evento : ${eventos}">
+			<td th:text="${evento.nombre}"></td>
+			<td th:text="${evento.aforoMaximo}"></td>
+			<td th:text="${evento.fechaInicio}"></td>
+			<td><a th:href="@{/eventos/verUno/{id}(id=${evento.idEvento})}">Detalle</a></td>	
+		</tr>	
+	</table>
+	<!-- Aquí abajo aparecerá un mensaje si en alguna ruta que redirija aqui en caso de no satisfacer una condición da error. -->
+	<span th:text="${mensaje}"></span>
+</body>
+</html>

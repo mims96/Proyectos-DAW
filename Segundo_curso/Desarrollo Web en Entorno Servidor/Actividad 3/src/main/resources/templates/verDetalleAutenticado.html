@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Detalle del evento</title>
+</head>
+<body>
+	<!-- Lo que va entre span, o en última instacia de 'p', significa
+	que es ese atributo el que hay que pintar. 
+	Todo esto será implementado en el EventoController.-->
+	<h2>Detalle del evento seleccionado</h2>
+	
+	<p>Nombre: <span th:text="${evento.nombre}"></span></p>
+	<p>Descripción: <span th:text="${evento.descripcion}"></span></p>
+	<p>Dirección: <span th:text="${evento.direccion}"></span></p>
+	<p>Fecha de inicio: <span th:text="${evento.fechaInicio}"></span></p>
+	<p>Duración: <span th:text="${evento.duracion}"></span></p>
+	<p>Aforo máximo: <span th:text="${evento.aforoMaximo}"></span></p>
+	<p>Mínimo de asistencia: <span th:text="${evento.minimoAsistencia}"></span></p>
+	<p>Precio: <span th:text="${evento.precio}"></span></p>
+	<br></br>
+	<p>Quedan: <span th:text="${aforoDisponible}"></span></p>
+	 
+	 <!-- Se realizará una solicitud post a una url variable en cuando al identificador del evento.
+	 Se debe seleccionar una cantidad especificada en el desplegable. -->
+	<br></br>
+    <form th:action="@{'/eventos/reservar/' + ${evento.idEvento}}" method="post">
+    <select name="cantidad">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <input type="submit" value="Reservar"/>
+	
+	</form> 
+	<span th:text="${mensaje}"></span>
+	<br></br>
+
+	<a th:href="@{/}">Volver al listado principal</a>
+</body>
+</html>

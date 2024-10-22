@@ -1,0 +1,134 @@
+.hero{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+
+.rech{
+    width: 1440px;
+    height: 600px;
+}
+
+
+.contenidoytexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+    position: absolute;
+    left: 53px;
+    top: 80px;
+
+    margin-left: 20px;
+}
+
+
+.tydh{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.recuerda{
+    width: 659px;
+    height: 72px;
+    color: var(--marca-color-de-letras, #111D38);
+
+    /* Titulos/TituloXL */
+    font-family: Lora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81.9px; /* 127.969% */
+
+    margin-top: 107px;
+}
+
+
+.recupera{
+    width: 430px;
+    height: 157px;
+    color: var(--marca-color-de-letras, #111D38);
+
+    /* Texto/Descripcion */
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px; /* 140% */
+
+    margin-top: -40px;
+}
+
+
+.botonycondicion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+
+.frame5{
+    display: flex;
+    width: 601px;
+    height: 88px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    background: var(--contraste-color-lila, #7D02A6);
+
+    margin-top: -48px;
+}
+
+.frame5 a{
+    text-decoration: none;
+}
+
+.frame5:hover{
+    background-color: rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.90);
+}
+
+
+.empezar{
+    color: var(--base-blanco, var(--Fondo, #FFF));
+    font-family: Lora;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 67.2px; /* 146.087% */
+}
+
+
+.primera {
+    width: 207px;
+    height: 17px;
+    color: var(--marca-color-de-letras, #111D38);
+
+    /* Texto/Tarjeta */
+    font-family: Cantarell;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px; /* 140% */
+}
+
+
+.foto1{
+    width: 544px;
+    height: 416px;
+    position: absolute;
+    right: 56px;
+    top: 83px;
+    background: url(img/home/fotohero.png), lightgray 50% / cover no-repeat;
+    margin-top: 125px;
+}
+

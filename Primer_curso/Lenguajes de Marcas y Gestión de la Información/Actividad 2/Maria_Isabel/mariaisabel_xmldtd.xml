@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!--                               
+                                    Se crea el DTD interno
+<!DOCTYPE biblioteca[
+    <!ELEMENT biblioteca (libros, revistas, periodicos)>
+
+                        Se crean los elementos y atributos de libros
+    <!ELEMENT libros (libro+)>
+    <!ATTLIST libro id ID #REQUIRED>
+    <!ATTLIST libro tipo_clase (novela | infantil | didáctico) #REQUIRED>
+    <!ATTLIST libro paginas CDATA #REQUIRED>
+    <!ELEMENT libro (titulo, capitulos, indice, sinopsis)>
+
+    <!ELEMENT titulo (#PCDATA)>
+
+    <!ELEMENT capitulos (capitulo+)>
+    <!ATTLIST capitulo paginas CDATA #REQUIRED>
+    <!ELEMENT capitulo (titulocapitulo, contenido)>
+    <!ELEMENT titulocapitulo (#PCDATA)>
+    <!ELEMENT contenido EMPTY>
+    <!ATTLIST contenido href CDATA #REQUIRED>
+
+    <!ELEMENT indice (#PCDATA)>
+
+    <!ELEMENT sinopsis (#PCDATA)>
+
+
+
+                        Se crean los elementos y atributos de revistas
+    <!ELEMENT revistas (revista+)>
+    <!ATTLIST revista id ID #REQUIRED>
+    <!ATTLIST revista tipo_clase (informática | corazón | coches | investigación | otras) #REQUIRED>
+    <!ATTLIST revista paginas CDATA #REQUIRED>
+    <!ELEMENT revista (titulorevista, numero, indicerevista, secciones)>
+
+    <!ELEMENT titulorevista (#PCDATA)>
+
+    <!ELEMENT numero (#PCDATA)>  
+
+    <!ELEMENT indicerevista (#PCDATA)>
+
+    <!ELEMENT secciones (seccion+)>
+    <!ATTLIST seccion paginas CDATA #REQUIRED>
+    <!ELEMENT seccion (nombre, contenidorevista)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT contenidorevista EMPTY>
+    <!ATTLIST contenidorevista href CDATA #REQUIRED>
+
+
+                        Se crean los elementos y atributos de periodicos
+    <!ELEMENT periodicos (periodico+)>
+    <!ATTLIST periodico id ID #REQUIRED>
+    <!ATTLIST periodico tipo_clase (nacional | internacional) #REQUIRED>
+    <!ATTLIST periodico publicacion CDATA #REQUIRED>
+    <!ELEMENT periodico (tituloperiodico, indiceperiodico, seccionesperiodico)>
+
+    <!ELEMENT tituloperiodico (#PCDATA)>
+
+    <!ELEMENT indiceperiodico (#PCDATA)>
+
+    <!ELEMENT seccionesperiodico (seccionperiodico+)>
+    <!ATTLIST seccionperiodico tipo CDATA #REQUIRED>
+    <!ELEMENT seccionperiodico (articulo+)>
+    <!ATTLIST articulo autor CDATA #REQUIRED>
+    <!ELEMENT articulo (#PCDATA|contenidoperiodico)*>
+    <!ELEMENT contenidoperiodico EMPTY>
+    <!ATTLIST contenidoperiodico href CDATA #REQUIRED>
+    
+]>
+
+-->
+
+
+
+
+
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:noNamespaceSchemaLocation="xsd_maria_isabel.xsd">
+<!--La etiqueta padre de todo el XML es biblioteca.
+    Dentro de ella se encuentran libros, revistas y periódicos y, a su vez, 
+    dentro de estos hay más elementos que se presentarán a continuación. -->
+ <!--<biblioteca>-->                                            <!--Libros-->  
+    <libros>
+        <libro id="L1234" tipo_clase="novela" paginas="448">
+            <titulo>Madame Bovary</titulo>
+            <capitulos>
+                <capitulo paginas ="10">
+                    <titulocapitulo>Capítulo 1</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-madame-bovary/9788467033915/1777854"></contenido>
+                </capitulo>
+                <capitulo paginas ="10">
+                    <titulocapitulo>Capítulo 2</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-madame-bovary/9788467033915/1777854"></contenido>
+                </capitulo>
+                <capitulo paginas ="6">
+                    <titulocapitulo>Capítulo 3</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-madame-bovary/9788467033915/1777854"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>
+                Capítulo 1 página 11
+                Capítulo 2 página 21
+                Capítulo 3 página 31
+            </indice>
+            <sinopsis>La soñadora Emma, una joven de provincias casada con Charles Bovary, quien la ama pero es incapaz de comprenderla y satisfacerla, buscará la realización de sus sueños en otros amores, pasionales y platónicos..., pero ninguno de ellos logrará calmar su desesperada ansiedad y sus románticas inquietudes.</sinopsis>
+        </libro>
+
+        <libro id="L5678" tipo_clase="infantil" paginas="96">
+            <titulo>El principito</titulo>
+            <capitulos>
+                <capitulo paginas ="4">
+                    <titulocapitulo>Cómo me hice piloto</titulocapitulo>
+                    <contenido href="https://www.amazon.es/Principito-Antoine-Saint-Exup%C3%A9ry-Saint-Exupery/dp/8498381495"></contenido>
+                </capitulo>
+                <capitulo paginas ="6"> 
+                    <titulocapitulo>Cómo conocí al principito</titulocapitulo>
+                    <contenido href="https://www.amazon.es/Principito-Antoine-Saint-Exup%C3%A9ry-Saint-Exupery/dp/8498381495"></contenido>
+                </capitulo>
+                <capitulo paginas ="16">
+                    <titulocapitulo>El planeta del principito</titulocapitulo>
+                    <contenido href="https://www.amazon.es/Principito-Antoine-Saint-Exup%C3%A9ry-Saint-Exupery/dp/8498381495"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>
+                Capítulo 1 página 7
+                Capítulo 2 página 11
+                Capítulo 3 página 17
+            </indice>
+            <sinopsis>Fábula mítica y relato filosófico que interroga acerca de la relación del ser humano con su prójimo y con el mundo, El Principito concentra, con maravillosa simplicidad, la constante reflexión de Saint-Exupéry sobre la amistad, el amor, la responsabilidad y el sentido de la vida.</sinopsis>
+        </libro>
+
+        <libro id="L9182" tipo_clase="didáctico" paginas="176">
+            <titulo>Cartas sobre Educación Infantil</titulo>
+            <capitulos>
+                <capitulo paginas ="1">
+                    <titulocapitulo>Carta 1</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-cartas-sobre-educacion-infantil-3-ed/9788430944194/1103028"></contenido>
+                    </capitulo>
+                <capitulo paginas ="1">
+                    <titulocapitulo>Carta 2</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-cartas-sobre-educacion-infantil-3-ed/9788430944194/1103028"></contenido>
+                </capitulo>
+                <capitulo paginas ="2"> 
+                    <titulocapitulo>Carta 3</titulocapitulo>
+                    <contenido href="https://www.casadellibro.com/libro-cartas-sobre-educacion-infantil-3-ed/9788430944194/1103028"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>
+                Capítulo 1 página 3
+                Capítulo 2 página 3
+                Capítulo 3 página 4 
+            </indice>
+            <sinopsis>Entre las variadas obras de Pestalozzi, en sus Cartas sobre educación infantil es donde mejor describe sus ideas pedagógicas. Se trata de una obra de síntesis, compuesta en su ancianidad con el propósito de dar una visión ordenada y completa de su pensamiento y de sus experiencias tras una vida entera dedicada a la labor y a la técnica de la escuela.</sinopsis>
+        </libro>
+    </libros>
+
+                                             <!--Revistas-->
+    <revistas>
+        <revista id="R1234" tipo_clase="informática" paginas="74">
+            <titulorevista>Computer Hoy</titulorevista>
+            <numero>641</numero>
+            <indicerevista>
+                Top 5 página 5
+                Foto de la semana página 6
+                El tema de la semana página 8
+            </indicerevista>
+            <secciones>
+                <seccion paginas="22">
+                    <nombre>Actualidad</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/tecnologia/revistas-tecnologia/computer-hoy/n-641-computer-hoy.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="18">
+                    <nombre>Práctico</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/tecnologia/revistas-tecnologia/computer-hoy/n-641-computer-hoy.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="16">
+                    <nombre>Test</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/tecnologia/revistas-tecnologia/computer-hoy/n-641-computer-hoy.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="12"> 
+                    <nombre>Saber más</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/tecnologia/revistas-tecnologia/computer-hoy/n-641-computer-hoy.html"></contenidorevista>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R5678" tipo_clase="corazón" paginas="78">
+            <titulorevista>Lecturas</titulorevista>
+            <numero>3388</numero> 
+            <indicerevista>
+                Torito página 4
+                Siete Días página 10
+                Kike Calleja página 16 
+            </indicerevista> 
+            <secciones>
+                <seccion paginas="60">
+                    <nombre>Reportajes</nombre>
+                    <contenidorevista href="https://play.google.com/store/apps/details?id=es.rba.lecturas.android"></contenidorevista>
+                </seccion>
+                <seccion paginas="12">
+                    <nombre>Actualidad</nombre>
+                    <contenidorevista href="https://play.google.com/store/apps/details?id=es.rba.lecturas.android"></contenidorevista>
+                </seccion>
+                <seccion paginas="1">
+                    <nombre>Pasatiempos</nombre>
+                    <contenidorevista href="https://play.google.com/store/apps/details?id=es.rba.lecturas.android"></contenidorevista>
+                </seccion>
+                <seccion paginas="1">
+                    <nombre>Horóscopo</nombre>
+                    <contenidorevista href="https://play.google.com/store/apps/details?id=es.rba.lecturas.android"></contenidorevista>
+                </seccion>
+            </secciones>
+        </revista>
+
+            <revista id="R9182" tipo_clase="coches" paginas="68">
+            <titulorevista>Motor 16</titulorevista>
+            <numero>1816</numero>
+            <indicerevista>  
+                Skoda Fabia Montecarlo página 6
+                DS e-tense performance página 8
+                Opel Astra página 10
+            </indicerevista>
+            <secciones>
+                <seccion paginas="4">
+                    <nombre>Qué pasa</nombre> 
+                    <contenidorevista href="https://www.motor16.com/files/700/749_XL3EzoUc46R8gB09t.pdf"></contenidorevista>
+                </seccion>
+                <seccion paginas="6">
+                    <nombre>En portada</nombre>
+                    <contenidorevista href="https://www.motor16.com/files/700/749_XL3EzoUc46R8gB09t.pdf"></contenidorevista>
+                </seccion>
+                <seccion paginas="28">
+                    <nombre>Cuatro ruedas</nombre>
+                    <contenidorevista href="https://www.motor16.com/files/700/749_XL3EzoUc46R8gB09t.pdf"></contenidorevista>
+                </seccion>
+                <seccion paginas="2">
+                    <nombre>Fuera de serie</nombre>
+                    <contenidorevista href="https://www.motor16.com/files/700/749_XL3EzoUc46R8gB09t.pdf"></contenidorevista>
+                </seccion>
+            </secciones>
+        </revista>
+
+            <revista id="R7364" tipo_clase="investigación" paginas="53">
+            <titulorevista>Conversus</titulorevista>
+            <numero>156</numero>
+            <indicerevista>
+                Elemental, mi querido Conversus página 2
+                Cuerpo ausente página 4
+                Los hechos de tránsito terrestre página 8
+            </indicerevista>
+            <secciones>
+                <seccion paginas="22">
+                    <nombre>Epicentro</nombre>
+                    <contenidorevista href="https://www.ipn.mx/ddicyt/conversus/revistas-anteriores-pdf/"></contenidorevista>
+                </seccion>
+                <seccion paginas="4"> 
+                    <nombre>Escáner</nombre>
+                    <contenidorevista href="https://www.ipn.mx/ddicyt/conversus/revistas-anteriores-pdf/"></contenidorevista>
+                </seccion>
+                <seccion paginas="12">
+                    <nombre>#HechoEnElIPN</nombre>
+                    <contenidorevista href="https://www.ipn.mx/ddicyt/conversus/revistas-anteriores-pdf/"></contenidorevista>
+                </seccion>
+                <seccion paginas="10">
+                    <nombre>Conciencia</nombre> 
+                    <contenidorevista href="https://www.ipn.mx/ddicyt/conversus/revistas-anteriores-pdf/"></contenidorevista>
+                </seccion>
+            </secciones>
+        </revista>
+
+            <revista id="R5192" tipo_clase="otras" paginas="100">
+            <titulorevista>Hobby Consolas</titulorevista>
+            <numero>382</numero>
+            <indicerevista>
+                Actualízate página 6
+                Big in Japan página 17
+                El sensor página 20
+                The Legend of Zelda:Tears of the kingdom página 24
+            </indicerevista>
+            <secciones>
+                <seccion paginas="11">
+                    <nombre>Actualízate</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/n-382-hobby-consolas.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="3">
+                    <nombre>Big in Japan</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/n-382-hobby-consolas.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="4">
+                    <nombre>El sensor</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/n-382-hobby-consolas.html"></contenidorevista>
+                </seccion>
+                <seccion paginas="25"> 
+                    <nombre>Reportaje</nombre>
+                    <contenidorevista href="https://store.axelspringer.es/n-382-hobby-consolas.html"></contenidorevista>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas> 
+
+                                             <!--Periódicos-->
+    <periodicos>
+        <periodico id="P1234" tipo_clase="nacional" publicacion="11 de mayo de 2023">
+            <tituloperiodico>El Mundo</tituloperiodico>
+            <indiceperiodico>
+                El PSOE fracasa en su intento de superar a Más Madrid página 3
+                La pereza rima con la tristeza página 4
+                La AIReF cuestiona el optimismo del gobierno página 5
+            </indiceperiodico>
+            <seccionesperiodico>
+                <seccionperiodico tipo="España">
+                    <articulo autor="Pablo Pardo">Una visita de perfil bajo a Biden permite a Sánchez arrancar la campaña desde la Casa Blanca
+                        <contenidoperiodico href="https://www.elmundo.es/espana/2023/05/12/645d3d2ffc6c831e158b45d8.html"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Opinión">
+                    <articulo autor="Federico Jiménez Losantos">Pumpido se proclama porder Legislativo
+                        <contenidoperiodico href="https://www.elmundo.es/opinion/columnistas/2023/05/11/645d24bffdddffdd508b462a.html"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Economía">
+                    <articulo autor="Carlos Segovia">Calviño saca a licitar sólo el 1% del mayor Perte de fondos europeos un año después de anunciarlo
+                        <contenidoperiodico href="https://www.elmundo.es/economia/2023/05/12/645d2e1621efa097038b4598.html"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Internacional">
+                    <articulo autor="Carlos Fresneda">La doble crisis del nacionalismo galés y escocés
+                        <contenidoperiodico href="https://www.elmundo.es/internacional/2023/05/12/645cee39e4d4d8a3538b45b5.html"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+            </seccionesperiodico> 
+        </periodico>  
+
+
+        <periodico id="P5678" tipo_clase="internacional" publicacion="12 de mayo de 2023">
+            <tituloperiodico>The Guardian</tituloperiodico>
+            <indiceperiodico>
+                Strict new rules come into force at US-Mexico border as Title 42 immigration ban expires página 3
+                Communal violence and civilian deaths in Sudan fuel fears of widening conflict página 4
+                Turkish opposition accuses Russia of election interference days before vote página 5
+            </indiceperiodico>
+            <seccionesperiodico>
+                <seccionperiodico tipo="News">
+                    <articulo autor="Marisol Chávez">Strict new rules come into force at US-Mexico border as Title 42 immigration ban expires
+                        <contenidoperiodico href="https://www.theguardian.com/us-news/2023/may/12/strict-new-rules-come-into-force-at-us-mexico-border-as-title-42-immigration-ban-expires"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Opinion">
+                    <articulo autor="Polly Toynbee">NHS waiting lists, inflation, national debt … one by one, Sunak&apos;s pledges are crumbling
+                        <contenidoperiodico href="https://www.theguardian.com/commentisfree/2023/may/12/nhs-waiting-lists-inflation-rishi-sunak-national-debt-tory"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Sport">
+                    <articulo autor="Tumaini Carayol">Novak Djokovic and Carlos Alcaraz rivalry could finally reignite in Rome
+                        <contenidoperiodico href="https://www.theguardian.com/sport/2023/may/11/novak-djokovic-and-carlos-alcaraz-rivalry-could-finally-reignite-in-rome"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+                <seccionperiodico tipo="Culture">
+                    <articulo autor="Alex Hern">Legend of Zelda: Tears of the Kingdom &#45; everything you need to know
+                        <contenidoperiodico href="https://www.theguardian.com/games/2023/may/12/legend-of-zelda-tears-of-the-kingdom-everything-you-need-to-know"></contenidoperiodico>
+                    </articulo>
+                </seccionperiodico>
+            </seccionesperiodico>
+        </periodico> 
+    </periodicos>
+</biblioteca>

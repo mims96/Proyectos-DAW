@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Requerimiento 1: --> 
+<?xml-stylesheet href="xslt_instituto.xsl" type="text/xsl"?> 
+
+<!-- Requerimiento 2: -->
+<!--<?xml-stylesheet type="text/xsl" href="requerimiento2.xsl"?>-->
+<ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
+    <empresa>Proeduca</empresa>
+
+    <telefono>+34 91 787 39 91</telefono>
+
+    <profesores>
+        <profesor>
+            <id>1</id>
+            <nombre>Félix</nombre>
+        </profesor>
+
+        <profesor>
+            <id>2</id>
+            <nombre>Raúl</nombre>
+        </profesor>
+
+        <profesor>
+            <id>3</id>
+            <nombre>Raquel</nombre>
+        </profesor>
+
+        <profesor>
+            <id>4</id>
+            <nombre>Tomás</nombre>
+        </profesor>
+    </profesores>
+
+    <director>
+        <nombre>Chon</nombre>
+        <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+    </director>
+
+    <jefe_estudios>
+        <nombre>Dani</nombre>
+        <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+    </jefe_estudios>  
+
+    <ciclos>
+        <ciclo id="ASIR">
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2009" />
+        </ciclo>
+
+        <ciclo id="DAW">
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2010" />
+        </ciclo>
+
+        <ciclo id="DAM">
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+            <grado>Superior</grado>
+            <decretoTitulo año="2010" />
+        </ciclo>
+    </ciclos>
+</ite>
+
+<!-- Estructura planteada para requerimiento 2
+<edix>
+	<informacion>
+		<grupo>Proeduca</grupo>
+		<denominacion>Instituto Tecnológico Edix</denominacion>
+		<www>https://institutotecnologico.edix.com</www>
+		<llama>+34 91 787 39 91</llama>
+	</informacion>
+	
+	<claustro>
+		<maestro id="1" nombre="Félix"/>
+		<maestro id="2" nombre="Raúl"/>
+		<maestro id="3" nombre="Raquel"/>
+		<maestro id="4" nombre="Tomás"/>
+	</claustro>
+
+	<gestiones>
+		<responsable nombre="Chon">
+			<localizacion>Numero 31, 3ª Planta, Edificio A</localizacion>
+		</responsable>
+	
+		<responsable nombre="Dani">
+			<localizacion>Numero 27, 2ª Planta, Edificio B</localizacion>
+		</responsable>
+	</gestiones>
+
+	<estudios>
+		<curso nivel="superior">
+			<siglas>ASIR</siglas>
+			<nombre_completo>Administración de Sistemas Informáticos en Red</nombre_completo>
+			<año_aprobacion>2009</año_aprobacion>
+		</curso>
+		
+		<curso nivel="superior">
+			<siglas>DAW</siglas>
+			<nombre_completo>Desarrollo de Aplicaciones Web</nombre_completo>
+			<año_aprobacion>2010</año_aprobacion>
+		</curso>
+		
+		<curso nivel="superior">
+			<siglas>DAM</siglas>
+			<nombre_completo>Desarrollo de Aplicaciones Multiplataforma</nombre_completo>
+			<año_aprobacion>2019</año_aprobacion>
+		</curso>
+	</estudios>
+</edix>
+-->

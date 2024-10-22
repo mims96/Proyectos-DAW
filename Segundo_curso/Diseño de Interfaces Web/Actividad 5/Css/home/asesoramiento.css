@@ -1,0 +1,92 @@
+.asesoramiento{
+    display: flex;
+    width: 1421px;
+    padding: 44px 46px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px 96px;
+    flex-wrap: wrap;
+
+    margin-top: 88px;
+}
+
+
+.imagenas{
+    width: 560px;
+    height: 472px;
+    flex-shrink: 0;
+    background: url(img/home/fotoasesoramiento.png), lightgray 0px -129.668px / 100% 177.898% no-repeat, #D9D9D9;
+}
+
+
+.textoas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+
+.apersonalizado{
+    width: 665px;
+    height: 88px;
+    color: var(--marca-color-de-letras, #111D38);
+
+    /* Titulos/TituloM */
+    font-family: Lora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 67.2px; /* 140% */
+}
+
+
+.proceso{
+    width: 673px;
+    height: 108px;
+    color: var(--marca-color-de-letras, #111D38);
+
+    /* Texto/Descripcion */
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px; /* 140% */
+}
+
+
+.botonas{
+    display: flex;
+    width: 560px;
+    height: 80px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--contraste-color-lila, #7D02A6);
+    background: var(--Fondo, #FFF);
+    
+    margin-top: 88px;
+    margin-left: 88px; 
+}
+
+
+.realizar{
+    color: var(--contraste-color-lila, #7D02A6);
+
+    /* Titulos/TituloS */
+    font-family: Cantarell;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px; /* 140% */
+}
+
+.botonas:hover{
+    border: 1px solid  rgba(142, 0, 148, 0.54);
+    color:rgba(142, 0, 148, 0.54);
+    box-shadow: 10px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}

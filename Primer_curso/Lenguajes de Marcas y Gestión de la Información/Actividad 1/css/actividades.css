@@ -1,0 +1,291 @@
+/*-------------------------------------------CSS normal -------------------------------------------------*/
+
+/* --- Elementos generales --- */
+body{
+  
+    background-color: rgba(204, 231, 249, 0.999);
+  
+}
+
+main{
+    float: left;
+    width: 70%;
+}
+
+aside{
+    float: right;
+    text-align: center;
+    margin-left: 76%;
+    position: absolute;
+    margin-top: 3cm;
+}
+
+
+/* --- Contenido --- */
+.hotel{
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(245, 188, 0); 
+    font-size: 40px;
+    
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    margin-right: 20%;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight:500;
+    line-height: 0.68cm;
+    width: 70%;
+    margin-left: 4%;
+}
+
+img{
+    width: 70%;
+    margin-left: 4%;
+}
+
+table{
+    text-align: center;
+    font-size: 18px;
+    font-weight:500;
+    line-height: 0.68cm;
+    width: 40%;
+    background-color: white;
+    border-color: black;
+    margin-left: 19%;
+}
+
+caption{
+    font-size: 25px;
+    background-color: orange;
+    font-style: italic;
+}
+
+td{
+    font-family: sans-serif;
+}
+
+th{
+    font-family: sans-serif;
+}
+
+.noin{
+    text-align: left;
+    margin-left: 19%;
+}
+
+button{
+    background-color: gold;
+    font-size: 22px;
+    font-style: italic;
+    font-weight:600;
+    margin-left: 35.7%;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.final{
+    text-decoration: underline;
+}
+
+h3{
+    font-style: italic;
+}
+
+.piefoto{
+    font-size: 15px;
+}
+
+.publi{
+    margin-left: 20%;
+}
+
+.nopubli{
+    width: 96%;
+}
+
+
+/* --- Footer --- */
+footer{
+    width: 100%;
+    height: auto; 
+    display: flex;
+}
+
+.info1{
+    width: 30%;
+    height: 100%;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+
+.logors{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.info2{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+
+.infomedio{
+    
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------Diseño responsive -------------------------------------------------*/
+
+/* --- iPad air en posicion vertical --- */
+@media all and (width: 820px) and (orientation: portrait){
+    h2{
+    font-size: 25px;
+    }
+
+    button{
+        margin-left: 32%;
+    }
+}
+
+/* --- iPad air en posicion horizontal --- */
+@media all and (width: 1180px) and (orientation:landscape){
+    h2{
+        font-size: 30px;
+        margin-right: 22%;
+    }
+    button{
+        margin-left: 34%;
+    }
+}
+
+/* --- Mínimo 1300px --- */
+@media all and (min-width: 1300px){
+    h2{
+        margin-right: 22%;
+    }
+
+    button{
+        margin-left: 34.5%;
+    }
+}
+
+/* --- iPhone 12 Pro en posicion vertical --- */
+@media all and (width: 390px) and (orientation: portrait){
+    
+    .h3follow{
+        font-size: 10px;
+    }
+
+    .h3{
+        font-size: 10px;
+        text-align: center; 
+        margin-left: 15%;
+    }
+
+    .h3bis{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    img.logors{
+        width: 15%;
+        height: 15%;
+    }
+
+    .publi{
+        font-size: 10px;
+        margin-top: 77%;
+    }
+
+    p.piefoto{
+        font-size: 12px;
+    }
+
+    nav.li{
+        /*font-size: 1px;
+        width: 100%;*/
+        
+       font-size: 120px;
+      width: 7%;
+
+    }
+
+    h5{
+        font-size: 8px;
+    }
+
+    img.icono{
+        width: 15%;
+        height: 15%;
+    }
+
+    h2{
+        font-size: 23px;
+        width: 70%;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    button{
+    margin-left: 25%;
+    }
+
+    th, td{
+        font-size: 15px;
+    }
+
+    table{
+        width: 60%;
+        margin-left: 8%;
+    }
+
+    .noin{
+        margin-left: 5%;
+    }
+
+   .lista li{
+    
+    font-size: 15px;
+    font-weight:500;
+    line-height: 0.68cm;
+    width: 70%;
+    margin-left: 4%;
+
+   }
+}
+
+
+/* --- iPhone 12 Pro en posicion horizontal --- */
+@media all and (width: 844px) and (orientation: landscape){
+    h2{
+        font-size: 25px;
+        text-align: center;
+        margin-right: 22%;
+    }
+
+    button{
+        margin-left: 32%;
+    }
+
+}

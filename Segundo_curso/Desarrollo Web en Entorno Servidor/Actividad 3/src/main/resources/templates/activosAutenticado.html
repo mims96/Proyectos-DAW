@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Listado activos</title>
+</head>
+<nav> 
+	<!-- Esta vista es muy parecida a la de index, y se muestra para usuarios logueados,
+	 por lo que no existe la opción de login ni la de registro. -->
+	<table width=100%>
+		<tr>
+			<th>Eventos</th>
+			<th><a th:href="@{/eventos/destacados}"><input type="button" value="Destacados"></a></th>
+			<th>	
+				<form action="/desplegable" method="get">
+				    <select name="tipoEvento" onchange="this.form.submit()">
+				        <option value="seleccion">Selecciona un evento</option>
+				        <option value="concierto">Concierto</option>
+				        <option value="despedida">Despedida</option>
+				        <option value="boda">Boda</option>
+				        <option value="cumple">Cumpleaños</option>
+				    </select>
+				</form>
+			</th>
+			<th><a th:href="@{/misReservas}"><input type="button" value="Mis reservas"></a></th>
+			<th><a th:href="@{/logout}"><input type="button" value="Salir"></a></th>
+			<th>Bienvenido, <span th:text="${session.usuario != null ? session.usuario.nombre : 'invitado'}"></span></th>
+		</tr>
+	</table>
+</nav>
+
+<body>
+	<h2>Listado de Eventos Activos</h2>
+	<table border="2" width=100%>
+		<tr>
+			<th>Nombre</th>
+			<th>Aforo</th>
+			<th>Fecha Inicio</th>
+			<th>Opciones</th>
+		</tr>
+		<tr th:each ="evento : ${eventos}">
+			<td th:text="${evento.nombre}"></td>
+			<td th:text="${evento.aforoMaximo}"></td>
+			<td th:text="${evento.fechaInicio}"></td>
+			<td><a th:href="@{/eventos/verUno/{id}(id=${evento.idEvento})}">Detalle</a></td>	
+		</tr>	
+	</table>
+	<br></br>
+	<span th:text="${mensaje}"></span>
+	<br></br>
+	<a th:href="@{/}">Volver al listado principal</a>
+</body>
+</html>

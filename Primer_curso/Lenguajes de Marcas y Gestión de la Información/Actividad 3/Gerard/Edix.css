@@ -1,0 +1,134 @@
+html{
+    background-color: rgba(248, 241, 139, 0.527);
+}
+
+
+
+header{
+    height: 350px;
+    background-image: url("/Gerard/img/ordenador.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: left;
+}
+
+header h1{
+    width: 60%;
+    font-size: 80px;
+    color:blueviolet   
+}
+
+header h2{
+    width: 60%;
+    color:blueviolet;
+    font-size: 40px;
+}
+
+header h3{
+    width: 60%;
+    color:blueviolet;
+    font-size: 20px;
+}
+
+.profesores{
+    background-color: white;
+    border:3px solid black;
+    height: 300px;
+    width: 50%;
+    float:left;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 5px 5px 5px black;
+}
+.profesorado{
+    text-align: center;
+    font-size: 35px;
+}
+
+.cursos{
+    background-color: white;
+    border:3px solid black;
+    height: 300px;
+    height: 300px;
+    width: 50%;
+    float:left;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 5px 5px 5px black;
+}
+.imparten{
+    text-align: center;
+    font-size: 35px;
+}
+
+.Equipo{
+    padding: 30px;
+    height: 300px;
+    clear: both;
+    font-size: 30px;
+    text-align: center;
+}
+
+.lista li{
+    padding: 100px;
+    display: inline;
+}
+.directora{
+    float:left;
+    width: 50%;
+}
+.directora img{
+    height: 120px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.jefeEstudios{
+    width: 50%;
+    float:left;
+    
+}
+
+.jefeEstudios img{
+    height: 120px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+footer{
+    background-color: white;
+    height: 400px;
+    width: 60%;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 25px;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.formulario{
+    display: inline-table;
+}
+
+footer option{
+    font-size: 20px;
+}
+
+footer select{
+    font-size: 20px;
+}
+
+.enviar{
+    text-align: center;
+}
+
+.enviar input{
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+
+}

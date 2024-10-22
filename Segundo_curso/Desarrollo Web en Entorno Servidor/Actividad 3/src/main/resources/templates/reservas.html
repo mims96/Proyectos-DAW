@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Mis reservas</title>
+</head>
+<nav> 
+	<table width=100%>
+		<tr>
+			<th>Eventos</th>
+			<th><a th:href="@{/eventos/destacados}"><input type="button" value="Destacados"></a></th>
+			<th><a th:href="@{/eventos/activos}"><input type="button" value="Activos"></a></th>
+			<th>	
+				<form action="/desplegable" method="get">
+				    <select name="tipoEvento" onchange="this.form.submit()">
+				        <option value="seleccion">Selecciona un evento</option>
+				        <option value="concierto">Concierto</option>
+				        <option value="despedida">Despedida</option>
+				        <option value="boda">Boda</option>
+				        <option value="cumple">Cumpleaños</option>
+				    </select>
+				</form>
+			</th>
+			<th><a th:href="@{/logout}"><input type="button" value="Salir"></a></th>
+			<th>Bienvenido, <span th:text="${session.usuario != null ? session.usuario.nombre : 'invitado'}"></span></th>
+		</tr>
+	</table>
+</nav>
+<body>
+	<h2>Listado de mis reservas</h2>
+	<table border="2" width=100%>
+		<tr>
+			<th>Nombre Evento</th>
+			<th>Fecha Inicio</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>Opciones</th>
+		</tr>
+		<tr th:each ="reserva : ${reservas}">
+			<td th:text="${reserva.evento.nombre}"></td>
+			<td th:text="${reserva.evento.fechaInicio}"></td>
+			 <td th:text="${reserva.precioVenta}"></td>
+			<td th:text="${reserva.cantidad}"></td>
+			<td><a th:href="@{/cancelar/{id}(id=${reserva.idReserva})}">Cancelar</a></td>	
+		</tr>	
+	</table>
+	<br></br>
+	<span th:text="${mensaje}"></span>
+	<br></br>
+	<a th:href="@{/}">Volver al listado principal</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Inicio de sesión</title>
+</head>
+<body>
+	<!-- Este es el formulario de login propio.  -->
+	<h2>Formulario de iniciar sesión</h2>
+	<form th:action="@{/login}" method="post">
+		<!-- Los name son parámetros de request, que llegan tradicionalmente por RequestParam al PostMapping.-->
+		<p>Username: <input type="text" name="username"></p>
+		<p>Password: <input type="password" name="password"></p>
+		<p><input type="submit" value="Iniciar sesión"></p>
+	</form>
+	
+	<!-- Aquí debería salir un mensaje si el username o la contraseña no son correctas, es decir, si hay un error. -->
+	<span th:if="${param.error != null}">El username y/o la contraseña no son correctos</span>
+	<br></br>
+	<a th:href="@{/}">Volver al listado principal</a>
+	
+</body>
+</html>

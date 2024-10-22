@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Menú de opciones</title>
+</head>
+<body style="background-image: url('/money.jpg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <fieldset style="background-color:white; width: 25%; text-align:center; margin: auto; border: 5px solid #93C572; border-radius: 10px;">
+	
+	<!-- El texto que se muestre dependerá de lo que se obtenga en el corchete.
+	Si la cuenta de la sesión no es nula entonces se muestra su id. De lo contrario figurará 'guest'. -->
+	<h2>Número de cuenta: <span th:text="${session.cuenta != null ? session.cuenta.idCuenta : 'Guest'}"></span></h2>
+	
+	<!-- Cuando se haga click en cualquiera de los siguientes enlaces, nos llevará a la ruta especificada entre corchetes. -->
+	<h4>Escoja la operación que desee realizar</h4>
+	<a th:href="@{/ingresar}">Ingresar</a>
+	<br></br>
+	<a th:href="@{/extraer}">Extraer</a>
+	<br></br>
+	<a th:href="@{/movimientos}">Ver movimientos</a>
+	<br></br>
+	<a th:href="@{/transferencia}">Transferencia</a>
+	<br></br>
+	<a th:href="@{/logout}">Cerrar sesión</a>	
+	<br></br>
+	</fieldset>
+</body>
+</html>
