@@ -1,0 +1,26 @@
+<body> 
+    <nav> 
+        <button routerLink="/contacto" class="contacto">Contacto</button>
+        <button routerLink="/about" class="about">Sobre nosotros</button>
+        <button routerLink="/index" class="indexnav">Listado</button>
+        <button routerLink="/login" class="login">Volver al login</button>
+        <span>¡Hola, {{hola}}!</span>
+    </nav>
+    <h1>¿Necesitas ayuda?</h1>
+
+    <form method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+        <label for="correo">Correo Electrónico: </label>
+        <input type="email" id="correo" name="correo">
+        <br><br>
+        <label for="comentarios">Comentarios: </label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="41"></textarea>
+        <br><br>
+        <input type="button" class="enviar" value="Enviar mi comentario"><br><br>
+        <button routerLink="/index" class="index">¡Volver al listado!</button>
+    </form>
+
+    
+</body>

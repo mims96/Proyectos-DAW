@@ -1,0 +1,84 @@
+/* Los elementos se posicionan correctamente cuando la pantalla es de 1440 x 900*/
+
+body{
+    background-image: url('../../assets/ending2.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+/*---------------------------------------Navegador-----------------------------------------*/
+
+nav{
+    background-color: pink;
+    padding: 16px;
+    border: 1px solid black;
+    position: relative;
+}
+
+nav button{
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.contacto:hover, .indexnav:hover, .login:hover{
+    font-style: italic;
+    border: white;
+}
+
+.about{
+    opacity: 0.5; 
+    cursor: not-allowed;
+}
+
+nav span{
+    font-size: 25px;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/*---------------------------------------------Página----------------------------------------*/
+
+.descripcion{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.125em;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 2%; 
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid black;
+    padding: 0.5em; 
+}
+
+/*------Botón volver al listado--------*/
+.index{
+    position: absolute; 
+    top: 37%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 0.625em; 
+    background-color: pink;
+    color: black;
+
+    font-size: 1.25em;
+    height: 3em;
+    width: 10.5em; 
+    font-family: serif;
+    font-weight: bold;
+
+    transition: transform 0.3s ease, background-color 0.3s ease
+}
+
+.index:hover {
+    background-color: rgb(249, 223, 228); 
+    transform: translate(-50%, -50%) scale(1.1);
+}

@@ -1,0 +1,37 @@
+<body> 
+    <nav> 
+        <button routerLink="/contacto" class="contacto">Contacto</button>
+        <button routerLink="/about" class="about">Sobre nosotros</button>
+        <button routerLink="/index" class="indexnav">Listado</button>
+        <button routerLink="/login" class="login">Volver al login</button>
+        <span>¡Hola, {{hola}}!</span>
+    </nav>
+
+    <table>
+        <caption>¡Detalles del juego!</caption> 
+            <tr> 
+                <th>Identificador</th>
+                <th>Título</th>
+                <th>Compañía</th>
+                <th>Valoración media</th>
+                
+            </tr>
+            <tr> 
+                <td>{{id}}</td>
+                <td>{{titulo}}</td>
+                <td>{{compania}}</td>
+                <td>{{valoracion}}</td>
+                
+            </tr>
+    </table>        
+
+    <img src="../../assets/outlast.png" alt="Portada doble Outlast" title="Outlast">
+
+    <button routerLink="/index" class="index">¡Volver al listado!</button>
+
+    <audio autoplay>
+        <source src="../../assets/sound4.m4a" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+</body>

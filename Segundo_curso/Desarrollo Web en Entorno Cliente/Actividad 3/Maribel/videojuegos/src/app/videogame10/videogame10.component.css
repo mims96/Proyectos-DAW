@@ -1,0 +1,137 @@
+/* Los elementos se posicionan correctamente cuando la pantalla es de 1440 x 900*/
+
+body{
+    background-image: url('../../assets/fondodet.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/*-----------------------------------------------------------Navegador---------------------------------------------------------------*/
+
+nav{
+    background-color: rgba(255, 194, 204, 0.5);
+    padding: 16px;
+    border: 1px solid black;
+    position: relative;
+}
+
+nav button{
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.about:hover{
+    font-style: italic;
+    border: white;
+}
+
+.contacto:hover, .indexnav:hover, .login:hover{
+    font-style: italic;
+    border: white;
+}
+
+nav span{
+    font-size: 25px;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/*------Botón volver al listado--------*/
+.index{
+    position: absolute; 
+    top: 34%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 0.625em; 
+    background-color: pink;
+    color: black;
+
+    font-size: 1.25em;
+    height: 2.5em;
+    width: 9em; 
+    font-family: serif;
+    font-weight: bold;
+
+    transition: transform 0.3s ease, background-color 0.3s ease
+}
+
+.index:hover {
+    background-color: rgb(249, 223, 228); 
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/*-----------------------------------Cuerpo------------------------------------------*/
+table{
+    border: 1px solid white;
+    border-radius: 4px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 0.5em;
+    text-align: center;
+    height: 10%;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+caption{
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow:
+        4px 4px 6px rgba(255, 255, 255, 0.8), 
+        -4px -4px 6px rgba(255, 255, 255, 0.8); 
+}
+
+
+td{
+    border: 1px solid white;
+}
+
+th:first-child {
+    width: 10%; 
+    font-size: 1.25em;
+}
+
+th:nth-child(2) {
+    width: 45%;
+    font-size: 1.25em;
+}
+
+th:nth-child(3) {
+    width: 25%;
+    font-size: 1.25em;
+}
+
+
+th:nth-child(4) {
+    width: 20%;
+    font-size: 1.25em;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43%;
+    height: auto;
+    top: 43%;
+}

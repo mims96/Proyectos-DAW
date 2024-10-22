@@ -1,0 +1,105 @@
+/* Los elementos se posicionan correctamente cuando la pantalla es de 1440 x 900*/
+
+body{
+    background-image: url('../../assets/correo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*--------------------------------------------Navegador---------------------------------------*/
+
+nav{
+    background-color: pink;
+    padding: 16px;
+    border: 1px solid black;
+    position: relative;
+}
+
+nav button{
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.about:hover, .indexnav:hover, .login:hover{
+    font-style: italic;
+    border: white;
+}
+
+.contacto{
+    opacity: 0.5; 
+    cursor: not-allowed;
+}
+
+nav span{
+    font-size: 25px;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/*------------------------------------------------Cuerpo---------------------------------*/
+
+h1{
+    margin-left: 61.5%; 
+    font-size: 2.8125em; 
+    margin-top: 3.6em; 
+    color: white;
+    text-shadow:
+        3px 3px 5px #000, 
+        -3px -3px 5px #000;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1em; 
+    width: 24%;
+    margin-left: 61%;
+    margin-top: 3.3%;
+    border: 2px solid black;
+}
+
+
+.enviar{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: 3px solid pink;
+    font-size: 0.875em; 
+    height: 1.875em; 
+    width: 11.7em; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 25%;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.enviar:hover {
+    transform: scale(1.1);
+}
+
+
+/*------Botón volver al listado--------*/
+.index{
+    border-radius: 10px;
+    background-color: pink;
+    color: black;
+
+    font-size: 1.25em; 
+    height: 3em;
+    width: 10.5em;
+    font-family: serif;
+    font-weight: bold;
+    margin-left: 19%;
+}
+
+.index:hover {
+    background-color: rgb(249, 223, 228); 
+}

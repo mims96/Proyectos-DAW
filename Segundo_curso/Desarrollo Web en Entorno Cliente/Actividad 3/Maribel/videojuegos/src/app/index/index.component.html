@@ -1,0 +1,38 @@
+<body>
+    <nav>
+        <button routerLink="/contacto" class="contacto">Contacto</button>
+        <button routerLink="/about" class="about">Sobre nosotros</button>
+        <button routerLink="/index" class="indexnav">Listado</button>
+        <button routerLink="/login" class="login">Volver al login</button>
+        <span>¡Hola, {{hola}}!</span>
+        
+    </nav>
+
+    <table>
+        <caption>Listado de videojuegos</caption> 
+            <tr> 
+                <th>Identificador</th>
+                <th>Título</th>
+                <th>Valoración media</th>
+                <th>🎶 Enlaces con sorpresa 🎶</th>
+            </tr>
+            <!--A continuación se procede a iterar la lista de videojuegos, del tal manera
+            que se creará una nueva fila (tr) con cada objeto Videojuego que localice dentro del listado.
+            Para ello se hace un bucle for adaptado a la sintaxis de Angular.
+            Con cada iteración, los elementos del listado se almacenan en una variable que debe ser declarada.
+            
+            Además, como en cada celda corresponde un determinado atributo, se debe acceder a su valor
+            gracias a la interpolación.
+        
+            Por otra parte, para aprovechar la estructura de la tabla, se incluirá también la columna
+            de ver más detalles, para la cual su url estará compuesta por la palabra videogame unida
+            a un identificador, que es el mismo que acaba de añadir el for. Esto es así porque el 
+            componente se llama videogame1, videogame2, ... -->
+            <tr *ngFor="let game of listado"> 
+                <td>{{game.id}}</td>
+                <td>{{game.titulo}}</td>
+                <td>{{game.valoracion}}</td>
+                <td><a routerLink="/videogame{{game.id}}/{{game.id}}/{{game.titulo}}/{{game.compania}}/{{game.valoracion}}">¡Ver más detalles de {{game.titulo}}!</a></td>
+            </tr>
+    </table> 
+</body>

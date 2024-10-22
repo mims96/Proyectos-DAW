@@ -1,0 +1,18 @@
+<body> 
+    <nav> 
+        <button routerLink="/contacto" class="contacto">Contacto</button>
+        <button routerLink="/about" class="about">Sobre nosotros</button>
+        <button routerLink="/index" class="indexnav">Listado</button>
+        <button routerLink="/login" class="login">Volver al login</button>
+        <!--Ahora queremos que aparezca el nombre del usuario, por lo que se interpola
+        la variable definida en el .ts de este componente:-->
+        <span>¡Hola, {{hola}}!</span>
+    </nav>
+    <p class="descripcion">¡Hola, jugadores! Somos un grupo de 3 desarrolladores apasionados de los videojuegos.
+        Estos nos han acompañado durante todas las etapas de nuestra vida, desde la NES, la SNES y la Nintendo 64 en nuestra tierna infancia, 
+        hasta la PS5 y la Nintendo Switch en la actualidad. Aunque nos gusta jugar a cualquier cosa, especialmente amamos Nintendo,
+        con mención especial a nuestro querido amigo bigotudo Super Mario. Esperamos que os guste el listado variado que os hemos preparado,
+        ya sabéis... ¡para vosotros, jugadores!
+    </p>
+    <button routerLink="/index" class="index">¡Volver al listado!</button>
+</body>

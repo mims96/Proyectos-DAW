@@ -1,0 +1,27 @@
+<body>
+    <h1 class="welcome">🎮¡Bienvenido!🎮</h1>
+
+    <!--Se crea el formulario de login con el evento que se desencadena cuando se envía dicho formulario.
+    Cuando se hace el submit se llama a la función de login.-->
+    <form (ngSubmit)="login()">
+        <fieldset>
+            <h1 class="log">Inicia sesión</h1>
+    
+            <!--En los tipos de las cajas se debe conectar la información que se escribe con
+            la variable que almacena dicha información, como si fuera un hilo. Eso lo consigue
+            la directiva ngModel. En otras palabras, esta directiva vincula el campo del formulario
+            con el atributo de la clase, de tal manera que pueda haber sincronización en caso de cambios. -->
+            <label for="user">User:</label><br>
+            <input type="text" id="user" [(ngModel)]="user" name="user" required><br><br>
+    
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" [(ngModel)]="contrasena" name="contrasena" required><br><br>
+            
+            <button type="submit">Login</button>
+        </fieldset>
+
+        <!--Gracias a *ngIf el siguiente elemento solo se mostrará por pantalla cuando la variable
+        'incorrecto' contiene el mensaje de error, porque en el método login del componente se fue por else.-->
+        <h3 *ngIf="incorrecto">{{incorrecto}}</h3>
+    </form>
+</body>
