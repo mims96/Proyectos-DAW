@@ -51,4 +51,4 @@ La corrección será en la siguiente proporción:
 30% : documentación del código.
 30% : resultado correcto de los test de las clases propuestas.
 
-https://github.com/Gerard-Perujo/Edix-Programacion
+# Trabajo en equipo realizado entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa.
