@@ -1,5 +1,6 @@
 # AD-5. Tarea en equipo. Interrelación entre clases
 **Trabajo en equipo realizado entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa**
+
 ![image](https://github.com/user-attachments/assets/302353b4-1139-441b-9862-d4a23167fdf9)
 
 Enunciado
