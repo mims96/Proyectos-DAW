@@ -1,3 +1,3 @@
 # Proyectos-DAW
 
-Actividades y proyectos realizados durante el CFGS de Desarrollo de Aplicaciones Web
+Actividades y proyectos más importantes realizados durante el CFGS de Desarrollo de Aplicaciones Web.
