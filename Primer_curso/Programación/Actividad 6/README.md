@@ -1,5 +1,5 @@
 # AD-6. Tarea en equipo. Clases de uso
-**Actividad en equipo realizada en María Isabel Martín, Gerard Perujo y Noelia Villahermosa**
+**Actividad en equipo realizada entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa**
 
 Enunciado
 
