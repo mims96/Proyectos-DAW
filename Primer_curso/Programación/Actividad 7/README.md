@@ -1,5 +1,5 @@
 # AD-7. Tarea en equipo. Acceso a Bases de Datos
-**Actividad en equipo realizada entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa.
+**Actividad en equipo realizada entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa.**
 
 Enunciado
 
