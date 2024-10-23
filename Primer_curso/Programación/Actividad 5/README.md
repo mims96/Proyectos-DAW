@@ -1,4 +1,6 @@
 # AD-5. Tarea en equipo. Interrelación entre clases
+**Actividad en equipo realizada entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa**
+
 ![image](https://github.com/user-attachments/assets/302353b4-1139-441b-9862-d4a23167fdf9)
 
 Enunciado
@@ -51,4 +53,4 @@ La corrección será en la siguiente proporción:
 30% : documentación del código.
 30% : resultado correcto de los test de las clases propuestas.
 
-https://github.com/Gerard-Perujo/Edix-Programacion
+

@@ -1,4 +1,6 @@
 # AD-7. Tarea en equipo. Acceso a Bases de Datos
+**Actividad en equipo realizada entre María Isabel Martín, Gerard Perujo y Noelia Villahermosa.
+
 Enunciado
 
 Realizar una Aplicación de gestión de proyectos, de acuerdo con la siguiente base de Datos:
@@ -91,4 +93,4 @@ La corrección será en la siguiente proporción:
 30% : documentación del código.
 30% : resultado correcto de los test de las clases propuestas.
 
-https://github.com/Gerard-Perujo/Grupo13_Actividad7
+

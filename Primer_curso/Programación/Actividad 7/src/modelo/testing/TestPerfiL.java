@@ -22,7 +22,7 @@ public class TestPerfiL {
 		
 		
 		System.out.println("Usamos el metodo crerPerfil(), vamos a crear un nuevo perfil a la base de datos");
-		System.out.println("En caso de que no este creado como resultado salra 1, si esta creado el resultado,"
+		System.out.println("En caso de que no este creado como resultado saldra 1, si esta creado el resultado,"
 				+ " sera 0");
 		System.out.println(perfil.crearPerfil(perf));
 		System.out.println(perfil.buscarUno(5));

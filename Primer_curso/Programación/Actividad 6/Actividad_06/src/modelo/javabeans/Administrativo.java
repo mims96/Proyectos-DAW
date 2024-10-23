@@ -1,7 +1,7 @@
 package modelo.javabeans;
 
 /**
- * Creamos una clase derivada de Persona que se llama Administrativo
+ * Creamos una clase derivada de Persona que se llama Administrativo.
  * 
  * @author Gerard_Perujo
  *
@@ -10,8 +10,8 @@ package modelo.javabeans;
 public class Administrativo extends Persona{
 
 	/**
-	 * Cramos una variable privada tipo String llamada tareas
-	 * que hace referencia a las tareas que realiza el administrativo
+	 * Creamos una variable privada tipo String llamada tareas
+	 * que hace referencia a las tareas que realiza el administrativo.
 	 */
 	private String tareas;
 	
@@ -25,8 +25,8 @@ public class Administrativo extends Persona{
 
 
 	/**
-	 * Creamos un constructor con todo importando las variables de Persona y
-	 * la variable privada de la clase profesor
+	 * Creamos un constructor con todo, importando las variables de Persona y
+	 * la variable privada de la clase Profesor.
 	 * 
 	 * @param  nif variable importada de Persona
 	 * @param  nombre variable importada de Persona
@@ -42,8 +42,7 @@ public class Administrativo extends Persona{
 
 
 	/**
-	 * Creamos los getters and setters solo de la clase Administrativo
-	 * 
+	 * Creamos los getters and setters solo de la clase Administrativo.
 	 */
 	public String getTareas() {
 		return tareas;
@@ -57,8 +56,8 @@ public class Administrativo extends Persona{
 
 
 	/**
-	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
-	 * de Persona y la variable de la clase Administrativo
+	 * Aqui hemos sobreescrito el metodo toString de persona donde estan los gets
+	 * de Persona y la variable de la clase Administrativo.
 	 */
 	
 	@Override
@@ -72,7 +71,7 @@ public class Administrativo extends Persona{
 	 * Creamos el metodo gestionMatricula() 
 	 * 
 	 * @return un enunciado donde nos dice quien gestiona la matricula cogiendo
-	 * el nombre de Persona
+	 * el nombre de Persona.
 	 */
 	public String gestionarMatricula() {
 		return "El Administrativo " + getNombre() + " va a gestionar tu matricula";
@@ -83,8 +82,7 @@ public class Administrativo extends Persona{
 	/**
 	 * importamos el metodo trabjar() de la clase Persona donde nos devuelve
 	 * un enunciado donde indica que administrativo va a realizar las tareas y 
-	 * que tareas realiza cogiendo el nombre de Persona y tareas de Administrativo 
-	 * 
+	 * que tareas realiza cogiendo el nombre de Persona y tareas de Administrativo. 
 	 */
 	
 	@Override

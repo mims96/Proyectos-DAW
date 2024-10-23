@@ -2,7 +2,7 @@ package modelo.javabeans;
 
 
 /**
- * Creamos una clase derivada de Persona llamada Alumno
+ * Creamos una clase derivada de Persona llamada Alumno.
  * 
  * @author Gerard_Perujo
  *
@@ -12,7 +12,7 @@ public class Alumno extends Persona{
 	
 	/**
 	 * Creamos una variable privada de tipo String llamada curso
-	 * que hace refencia al curso que participa el alumno
+	 * que hace refencia al curso que participa el alumno.
 	 */
 	private String curso;
 	
@@ -23,7 +23,7 @@ public class Alumno extends Persona{
 
 	/**
 	 * Creamos un constructor con todo importando las variables de Persona y
-	 * la variable privada de la clase profesor
+	 * la variable privada de la clase profesor.
 	 * 
 	 * @param  nif variable importada de Persona
 	 * @param  nombre variable importada de Persona
@@ -40,8 +40,7 @@ public class Alumno extends Persona{
 
 	
 	/**
-	 * Creamos los getters and setters solo de la clase Alumno
-	 * 
+	 * Creamos los getters and setters solo de la clase Alumno. 
 	 */
 	public String getCurso() {
 		return curso;
@@ -56,8 +55,8 @@ public class Alumno extends Persona{
 	
 	
 	/**
-	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
-	 * de Persona y la variable de la clase Alumno
+	 * Aqui hemos sobreescrito el metodo toString de persona donde estan los gets
+	 * de Persona y la variable de la clase Alumno.
 	 */
 
 
@@ -71,8 +70,8 @@ public class Alumno extends Persona{
 	/**
 	 * Creamos el metodo hacer Examen()
 	 * 
-	 * @return devuelve un enunciado con el nombre del almuno que va hacer 
-	 * el examen
+	 * @return devuelve un enunciado con el nombre del alumno que va hacer 
+	 * el examen.
 	 */
 	
 	public String hacerExamen() {
@@ -81,9 +80,9 @@ public class Alumno extends Persona{
 
 
 	/**
-	 * importamos el metodo trabjar() de la clase Persona donde nos devuelve
+	 * Importamos el metodo trabajar() de la clase Persona donde nos devuelve
 	 * un enunciado en el curso que va estudiar cogiendo el nombre de Persona y 
-	 * el curso en el que estudia
+	 * el curso en el que estudia.
 	 */
 	
 	@Override

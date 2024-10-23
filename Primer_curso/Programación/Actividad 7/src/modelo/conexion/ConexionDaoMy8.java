@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class ConexionDaoMy8 {
 	
 	/**
-	 * Creamos unas variables de conexion y de url usuario y pasword que haran referencia a la
+	 * Creamos unas variables de conexion y de url usuario y password que haran referencia a la
 	 * direccion de la base de datos, el usuario y la contraseña de la base de datos
 	 */
 	private static Connection conn;
@@ -41,10 +41,10 @@ public class ConexionDaoMy8 {
 	}
 
 	/**
-	 * Creamos el metodo conectar cada vez que haya una nueva conexion se conectara
-	 * en caso de que el programa ya se haya conectado no se volvera a conectar
+	 * Creamos el metodo conectar. Cada vez que haya una nueva conexion se conectara.
+	 * En caso de que el programa ya se haya conectado no se volvera a conectar,
 	 * de esta forma el programa mejora en redimiento ya que no tiene que realizar una
-	 * conexion en cada consulta
+	 * conexion en cada consulta.
 	 * 
 	 */
 	public static Connection conectar() {

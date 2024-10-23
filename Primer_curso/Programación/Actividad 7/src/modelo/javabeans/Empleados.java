@@ -4,7 +4,7 @@ import java.sql.Date;
 
 
 /**
- * Creo la clase Empleado que contiene todos los atributos que hacen referenciua al empleado de la base de datos
+ * Creo la clase Empleado que contiene todos los atributos que hacen referencia al empleado de la base de datos
  * y 2 objetos de tipo privado que hacen referencia a las clases Perfil y departamento
  * 
  * @author Gerard_Perujo
@@ -62,7 +62,7 @@ public class Empleados {
 	}
 
 	/**
-	 * Creamos todos los getters and setters de la Classe
+	 * Creamos todos los getters and setters de la Clase
 	 */
 
 	public int getIdEmpl() {
@@ -193,7 +193,7 @@ public class Empleados {
 
 	
 	/**
-	 * Este metodo te calcula el SalarioBruto del Empleado
+	 * Este metodo calcula el SalarioBruto del Empleado
 	 * 
 	 * @return devuelve un double con el Salario Bruto
 	 */
@@ -244,7 +244,7 @@ public class Empleados {
 	 * A partir de un nombre y un apellido te genera el email, cogiendo el primer
 	 * caracter del nombre y el apellido
 	 * 
-	 * @return devuelve el primer caracter del nombre en mayuscuylas y los concatena con
+	 * @return devuelve el primer caracter del nombre en mayusculas y los concatena con
 	 * los apellidos poniendolos en minusculas
 	 */
 	public String obtenerEmail() {

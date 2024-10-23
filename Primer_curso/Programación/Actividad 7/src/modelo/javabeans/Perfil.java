@@ -4,7 +4,7 @@ import java.util.Objects;
 
 
 /**
- * Creamos la classe Perfil con los atributos que tiene la base de datos Perfil
+ * Creamos la clase Perfil con los atributos que tiene la base de datos Perfil
  * 
  * @author Gerard_Perujo
  *
@@ -80,7 +80,7 @@ public class Perfil {
 	}
 
 	/**
-	 * Creamos el hascode con el atributo idPerfil ya que es la PK en la base de
+	 * Creamos el hashcode con el atributo idPerfil ya que es la PK en la base de
 	 * datos y con esto podremos llamar a esta clase desde otra.
 	 */
 	@Override

@@ -2,7 +2,7 @@ package modelo.javabeans;
 
 /**
  * Creamos una clase derivada de Persona cogiendo las variables de Persona y 
- * importando los metodos abstractos de Persona
+ * importando los metodos abstractos de Persona.
  * 
  * @author Gerard_Perujo
  *
@@ -13,7 +13,7 @@ public class Profesor extends Persona{
 	
 	/**
 	 * Variable privada de tipo String llamada competencias
-	 * hace refencia a la rama que desenvolupa el profesor
+	 * hace refencia a la rama que desarrolla el profesor
 	 */
 	private String competencias;
 
@@ -26,7 +26,7 @@ public class Profesor extends Persona{
 	
 	/**
 	 * Creamos un constructor con todo importando las variables de Persona y
-	 * la variable privada de la clase profesor
+	 * la variable privada de la clase profesor.
 	 * 
 	 * @param  nif variable importada de Persona
 	 * @param  nombre variable importada de Persona
@@ -41,8 +41,7 @@ public class Profesor extends Persona{
 
 
 	/**
-	 * Creamos los getters and setters solo de la clase Profesor
-	 * 
+	 * Creamos los getters and setters solo de la clase Profesor.
 	 */
 	public String getCompetencias() {
 		return competencias;
@@ -57,8 +56,8 @@ public class Profesor extends Persona{
 
 	
 	/**
-	 * Aqui hemos sobreescrito el metodo toString de persona donde hay los gets
-	 * de Persona y la variable de Profesor
+	 * Aqui hemos sobreescrito el metodo toString de persona donde estan los gets
+	 * de Persona y la variable de Profesor.
 	 */
 	
 	@Override
@@ -70,9 +69,9 @@ public class Profesor extends Persona{
 	
 	/**
 	 * Creamos el metodo poner notas() donde con un get coge el nombre de persona
-	 * ya que las variables son privadas
+	 * ya que las variables son privadas.
 	 * 
-	 * @return devuelve un enunciado con el nombre del profesor
+	 * @return devuelve un enunciado con el nombre del profesor.
 	 */
 	public String ponerNotas() {
 		return "El Profesor " + getNombre() + " va ha corregir los examenes";
@@ -82,7 +81,7 @@ public class Profesor extends Persona{
 
 	/**
 	 * importamos el metodo trabajar() de Persona donde nos devuelve un 
-	 * enunciado con el nombre del profesor
+	 * enunciado con el nombre del profesor.
 	 */
 	@Override
 	public String trabajar() {

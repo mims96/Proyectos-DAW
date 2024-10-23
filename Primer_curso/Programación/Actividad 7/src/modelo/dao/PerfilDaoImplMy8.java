@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import modelo.javabeans.Perfil;
 
 /**
- * Creo la clase Perfil dao impl i implemento los metodos de la interface y tambien
- * agrego la conexion para que se pueda conectar a la base de datos
+ * Creo la clase PerfilDaoImpl e implemento los metodos de la interface y tambien
+ * agrego la conexion para que se pueda conectar a la base de datos.
  * 
  * @author Gerard_Perujo
  *
@@ -16,8 +16,8 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 	
 	
 	/**
-	 * creo una variable de tipo perfil y creo un objeto perfil para evitar tener
-	 * que crear un objeto todas las veces
+	 * Creo una variable de tipo perfil y creo un objeto perfil para evitar tener
+	 * que crear un objeto todas las veces.
 	 */
 	private Perfil perf;
 	
@@ -27,7 +27,7 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 
 	
 	/**
-	 * Crea un Perfil nuevo dentro de la base de datos
+	 * Crea un Perfil nuevo dentro de la base de datos.
 	 */
 	@Override
 	public int crearPerfil(Perfil perfil) {
@@ -50,7 +50,7 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 	}
 
 	/**
-	 * Busca un perfil con el id_perfil que le pases
+	 * Busca un perfil con el id_perfil que le pases.
 	 */
 	@Override
 	public Perfil buscarUno(int idPerfil) {
@@ -72,7 +72,7 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 	}
 
 	/**
-	 * modifica un perfil entero agregandole todos los valores
+	 * Modifica un perfil entero agregandole todos los valores.
 	 */
 	@Override
 	public int modificarPerfil(Perfil perfil) {
@@ -95,7 +95,7 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 	}
 
 	/**
-	 * Elimina un perfil en la base de datos pasandole el id del perfil
+	 * Elimina un perfil en la base de datos pasandole el id del perfil.
 	 */
 	@Override
 	public int eliminarPerfil(int idPerfil) {
@@ -116,7 +116,7 @@ public class PerfilDaoImplMy8 extends AbstractConexionMy8 implements PerfilDao{
 	
 	/**
 	 * Creo el metodo crear perfil para no tener
-	 * que crear en cada metodo un objeto perfil nuevo
+	 * que crear en cada metodo un objeto perfil nuevo.
 	 * 
 	 */
 	public void crearPerfiles(Perfil perfil) throws SQLException{

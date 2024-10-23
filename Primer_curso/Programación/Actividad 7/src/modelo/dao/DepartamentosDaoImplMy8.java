@@ -6,7 +6,7 @@ import modelo.javabeans.Departamentos;
 
 /**
  * Creo la clase departamentos impl e importo los metodos de la interface y tambien agrego la 
- * clase conexion para que se pueda conectar en la base de datos
+ * clase conexion para que se pueda conectar en la base de datos.
  * 
  * @author Gerard_Perujo
  *
@@ -21,7 +21,7 @@ public class DepartamentosDaoImplMy8 extends AbstractConexionMy8 implements Depa
 	}
 
 	/**
-	 * Creamos un departamento nuevo dentro de la base de datos
+	 * Creamos un departamento nuevo dentro de la base de datos.
 	 */
 	@Override
 	public int crearDepartamento(Departamentos departamento) {
@@ -45,8 +45,8 @@ public class DepartamentosDaoImplMy8 extends AbstractConexionMy8 implements Depa
 	}
 
 	/**
-	 * Con este metodo le pasamos un id departamento y nos busca
-	 * el departamento en question en la base de datos
+	 * Con este metodo le pasamos un idDepartamento y nos busca
+	 * el departamento en cuestion en la base de datos.
 	 */
 	@Override
 	public Departamentos buscarUno(int idDepar) {
@@ -69,7 +69,7 @@ public class DepartamentosDaoImplMy8 extends AbstractConexionMy8 implements Depa
 
 	/**
 	 * Con este metodo podemos modificar un departamento entero pasandole
-	 * todos los valores de cada campo
+	 * todos los valores de cada campo.
 	 */
 	@Override
 	public int modificarDepartamento(Departamentos departamento) {
@@ -96,7 +96,7 @@ public class DepartamentosDaoImplMy8 extends AbstractConexionMy8 implements Depa
 
 	/**
 	 * Con este metodo le pasas una id de departamento y te elimina el departamento
-	 * de la base de datos que le has pasado
+	 * de la base de datos que le has pasado.
 	 */
 	@Override
 	public int eliminarDepartamento(int idDepar) {
@@ -116,8 +116,8 @@ public class DepartamentosDaoImplMy8 extends AbstractConexionMy8 implements Depa
 	}
 
 	/**
-	 * Creo un metodo crear departamentos para poder crear un objeto departamentio
-	 * y evitar crear un objeto dentro de cada metodo
+	 * Creo un metodo crear departamentos para poder crear un objeto departamento
+	 * y evitar crear un objeto dentro de cada metodo.
 	 */
 	public void crearDepartamentos(Departamentos departamento) throws SQLException {
 		departamento.setIdDepar(rs.getInt(1));

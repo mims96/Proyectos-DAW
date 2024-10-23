@@ -11,7 +11,7 @@ import modelo.javabeans.Perfil;
 
 /**
  * En esta clase implementamos todos los metodos de la interface EmpleadoDao y tambien importamos
- * la clase abtracta de conexion para que nos podamos conectar en la base de datos
+ * la clase abtracta de conexion para que nos podamos conectar en la base de datos.
  * 
  * @author Gerard_Perujo
  *
@@ -32,7 +32,7 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 
 
 	/**
-	 * Creamos un metodo que nos permite crear un nuevo empleado en la base de datos
+	 * Creamos un metodo que nos permite crear un nuevo empleado en la base de datos.
 	 */
 	@Override
 	public int crearEmpleado(Empleados empleado) {
@@ -63,7 +63,7 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * buscamos un empleado en concreto en la base de datos al pasarle su id de empleado
+	 * Buscamos un empleado en concreto en la base de datos al pasarle su id de empleado.
 	 */
 	@Override
 	public Empleados buscarUno(int idEmpl) {
@@ -86,8 +86,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * este metodo permite modificar los datos que que hay en la base de datos de un 
-	 * empleado en concreto
+	 * Este metodo permite modificar los datos que hay en la base de datos de un 
+	 * empleado en concreto.
 	 */
 	@Override
 	public int modificarEmpleado(Empleados empleado) {
@@ -118,7 +118,7 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * eliminamos un empleado dentro de la base de datos
+	 * Eliminamos un empleado dentro de la base de datos.
 	 */
 	@Override
 	public int eliminarEmpleado(int idEmpl) {
@@ -138,8 +138,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * con una array recorremos toda la tabla de empleados de la base de datos y sacamos todos los empleados
-	 * que hay
+	 * Con una array recorremos toda la tabla de empleados de la base de datos y sacamos todos los empleados
+	 * que hay.
 	 */
 	@Override
 	public List<Empleados> buscarTodos() {
@@ -163,8 +163,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	
 	
 	/**
-	 * con una array recorremos toda la tabla empleados que hay en la base de datos
-	 * y sacamos el empleado en concreto pasando el id del empleado
+	 * Con una array recorremos toda la tabla empleados que hay en la base de datos
+	 * y sacamos el empleado en concreto pasando el id del empleado.
 	 */
 	@Override
 	public List<Empleados> empleadoByDepartamento(int idDepar) {
@@ -189,8 +189,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * con una array recorremos toda la tabla empleados que hay en la base de datos
-	 * y sacamos los empleados que tengan el sexo que le hemos pasado
+	 * Con una array recorremos toda la tabla empleados que hay en la base de datos
+	 * y sacamos los empleados que tengan el sexo que le hemos pasado.
 	 */
 	@Override
 	public List<Empleados> empleadosBySexo(char sexo) {
@@ -219,8 +219,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * con una array recorremos toda la tabla empleados de la base de datos 
-	 * y sacamos los empleados que tengan el apellido que le hemos pasado
+	 * Con una array recorremos toda la tabla empleados de la base de datos 
+	 * y sacamos los empleados que tengan el apellido que le hemos pasado.
 	 */
 	@Override
 	public List<Empleados> empleadosByApellido(String subcadena) {
@@ -248,7 +248,7 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * sumamos todos los salarios que hay en la tabla empleados de la base de datos
+	 * Sumamos todos los salarios que hay en la tabla empleados de la base de datos.
 	 */
 	@Override
 	public double salarioTotal() {
@@ -269,8 +269,8 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 	}
 
 	/**
-	 * sumamos todos los salarios que hay en la tabla empleados de la base de datos
-	 * pasando el id de un departamento
+	 * Sumamos todos los salarios que hay en la tabla empleados de la base de datos
+	 * pasando el id de un departamento.
 	 */
 	@Override
 	public double salarioTotal(int idDepar) {
@@ -295,7 +295,7 @@ public class EmpleadoDaoImplMy8 extends AbstractConexionMy8 implements EmpleadoD
 
 	/**
 	 * Creo un metodo buscar empleado para evitar tener que crear
-	 * un objeto empleado dentro de cada metodo 
+	 * un objeto empleado dentro de cada metodo. 
 	 */
 	public void crearEmpleados(Empleados empleado) throws SQLException{
 		

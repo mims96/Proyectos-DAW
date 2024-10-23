@@ -1,4 +1,6 @@
 # AD-6. Tarea en equipo. Clases de uso
+**Actividad en equipo realizada en María Isabel Martín, Gerard Perujo y Noelia Villahermosa**
+
 Enunciado
 
 Para la gestión de un centro educativo, un programa necesita contemplar las entidades profesor, alumno y administrativo, teniendo en cuenta que todos, a su vez, son personas.
@@ -64,5 +66,4 @@ La corrección será en la siguiente proporción:
 30% : documentación del código.
 30% : resultado correcto de los test de las clases propuestas.
 
-https://github.com/Gerard-Perujo/Programacion_AD-6
-https://github.com/Gerard-Perujo/progama_AD6Nuevo
+

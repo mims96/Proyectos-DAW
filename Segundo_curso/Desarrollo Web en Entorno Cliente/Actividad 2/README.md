@@ -1,4 +1,5 @@
 # AE-2. AJAX
+**Actividad en grupo en la que cada miembro aporta una posible solución**
 
 Requerimiento 1
 
@@ -26,10 +27,3 @@ Se recomienda el uso de GITHUB para realizar el trabajo de grupo. Se debe aclara
 
 Para la entrega, se subirá el código fuente comprimido a la plataforma, incluyendo un documento PDF con todo lo necesario para demostrar el correcto funcionamiento de la actividad (resultados, capturas de pantalla, ficheros, fotos, etc.). No es necesario que el documento PDF sea muy extenso, pero SÍ que incluya, al menos, las capturas de los resultados obtenidos y la explicación de los puntos clave de la actividad realizada. También puede ser valido para la entrega subir el PDF con la URL de acceso al repositorio GITHUB sin necesidad de incluir el código fuente.
 
-
----------------------------------------------------------------------------
-Somos el Grupo_03
-
-Gerard Perujo - Maria Isablel - Noelia Villahermosa
-
-Trabajaremos como siempre cada uno se creara una carpeta con su nombre y alli dentro guardara todo su trabajo de esa manera quedaran los 3 trabajos separados individualmente.

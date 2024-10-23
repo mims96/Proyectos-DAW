@@ -10,7 +10,7 @@ import modelo.javabeans.Profesor;
 	// CREO LA CLASE INSTITUTO IMPLEMENTANDO LA INTERFAZ INSTITUTODAO
 public class InstitutoDaoImplList implements InstitutoDao {
 	
-	//CREO LOS DATOS PRIVADOS: el nombre y un arraylist con persona que es la clase de la que heredo para introducir los datos
+	//CREO LOS DATOS PRIVADOS: el nombre y un ArrayList con persona, que es la clase de la que heredo para introducir los datos.
 	
 
 	private ArrayList<Persona>listaPersonas;
@@ -50,8 +50,8 @@ public class InstitutoDaoImplList implements InstitutoDao {
 
 	@Override //DAR DE ALTA PERSONAS
 	
-	/* Si la persona que me pasan ya esta en la lista entonces no la damos de alta e imprime que no ha sido posible dar de alta
-	 * sin embargo si la persona que me pasan no está en la lista entonces añade la persona a la listaPersonas e imprime que ha sido dada de alta 
+	/* Si la persona que me pasan ya esta en la lista entonces no la damos de alta e imprime que no ha sido posible dar de alta.
+	 * Sin embargo si la persona que me pasan no está en la lista entonces añade la persona a la listaPersonas e imprime que ha sido dada de alta. 
 	 */
 	public boolean altaPersona(Persona persona) {
 		if (listaPersonas.contains(persona)) {
@@ -70,7 +70,7 @@ public class InstitutoDaoImplList implements InstitutoDao {
 	@Override //ELIMINAR PERSONAS
 	
 	/* Si la persona que me pasan está en la listaPersonas, el metodo remove se encarga de eliminarla 
-	 * y devuelve true (si la persona que le indicamos ha sido eliminada) o false (si la persona no ha sido posible eliminarla)
+	 * y devuelve true (si la persona que le indicamos ha sido eliminada) o false (si la persona no ha sido posible eliminarla).
 	 */
 	
 	public boolean eliminarPersona(Persona persona) {
@@ -105,7 +105,7 @@ public class InstitutoDaoImplList implements InstitutoDao {
 	@Override  //BUSCAR PERSONAS POR DNI
 	
 	/*
-	 * Devuelve una lista de todas las personas que se encuentran en la lista "listaPersonas"
+	 * Devuelve una lista de todas las personas que se encuentran en la lista "listaPersonas".
 	 */
 	
 	public ArrayList<Persona> buscarTodas() {

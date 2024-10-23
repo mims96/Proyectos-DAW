@@ -82,8 +82,8 @@ public class Departamentos {
 
 
 	/**
-	 * Creamos el hascode de Departamento cogiendo el idDepar ya que es el
-	 * atributo que hace referencia a la PK en la base de datos, y con el hascode 
+	 * Creamos el hashCode de Departamento cogiendo el idDepar ya que es el
+	 * atributo que hace referencia a la PK en la base de datos, y con el hashcode 
 	 * podremos llamar a esta clase desde otra
 	 */
 	@Override

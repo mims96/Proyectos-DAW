@@ -8,14 +8,14 @@ public class Principal {
 
 	public static void main(String[] args) {
 		/*
-		 * Se crean los objetos de Administrativo, Alumno y Profesor
+		 * Se crean los objetos de Administrativo, Alumno y Profesor.
 		 */
 		Administrativo admin = new Administrativo("123456789G", "Mariano García", "Calle Londres, 39", "666778899", "Papeleo");
 		Alumno alu = new Alumno("987654321U", "Pablo Gomez", "Calle Praga, 89", "777889966", "Segundo de Bachillerato");
 		Profesor profe = new Profesor("567891234M", "Alexander Jimenez", "Calle Amsterdam, 234", "888996677", "Ingles");
 		
 		/*
-		 * Se ejecuta el metodo toString y el metodo trabajar para cada uno
+		 * Se ejecuta el metodo toString y el metodo trabajar para cada uno.
 		 */
 		System.out.println(profe);
 		System.out.println(profe.trabajar());
@@ -29,7 +29,7 @@ public class Principal {
 		System.out.println(" ");
 		
 		/*
-		 * Se ejecuta el metodo llamar para que el alumno llame al profesor
+		 * Se ejecuta el metodo llamar para que el alumno llame al profesor.
 		 */
 		System.out.println(alu.llamar(profe));
 		System.out.println(" ");

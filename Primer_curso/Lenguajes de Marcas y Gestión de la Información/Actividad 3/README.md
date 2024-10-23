@@ -1,4 +1,5 @@
 # AE-3. XSLT y XPATH
+**Actividad en grupo en la que cada miembro aporta una posible solución**
 
 Enunciado
 
@@ -137,8 +138,3 @@ Para la actividad se recomienda que todos los integrantes aporten una posible so
 Se recomienda el uso de GITHUB para realizar el trabajo y dejar el código fuente en dicha plataforma, ya que, si hay problemas con la entrega al subirla a la plataforma de EDIX, queda constancia en GITHUB de los commits hechos. Se puede subir el código fuente también comprimido a la plataforma en su lugar si así se prefiere, pero en este caso, el fichero PDF y el código comprimido (fichero .zip o .7z) deben de ir por separado.
 
 
------------------------------------------------------------------------------------------------
-https://github.com/Gerard-Perujo/Marcas_Act3.git
-En esta actividad cada uno tiene que resolver la actividad completamente y luego al final escogeremos entre todos la actividad que creemos que esta mejor resuelta.
-
-Una vez clonado el repositorio crearemos una carpeta con nuestro nombre y alli dentro pondremos nuestro trabajo de esa manera el trabajo de cada uno, estara dentro de su carpeta correspondiente.
